@@ -24,7 +24,7 @@ Here's a list of all the required test equipment for completing the [Touchscreen
 
 You can use either one of these tools for precision touch testing.
 
--   TRIEX Precision Touch Test Tool (PT3)
+-   TRIEX/Tactile Precision Touch Test Tool (PT3)
 -   ITRI Precision Touch Test Tool (PT3)
 
 ## Rotation and Acoustic (RA) Tool
@@ -32,16 +32,16 @@ You can use either one of these tools for precision touch testing.
 
 You can use either one of these tools for RA testing.
 
--   TRIEX RA Tool
+-   TRIEX/Tactile RA Tool
 -   ITRI RA Tool
 
-## Contacts for TRIEX and ITRI
+## Contacts for Tactile and ITRI
 
 
--   Triex Technologies, Inc.
-    Tim Wright
-    +1 (206) 940-0943
-    timw@triextech.com
+-   Tactile Automation, Inc.
+    Emery Parks
+    +1 (425) 310-8380 
+    emeryp@tactileautomation.com 
 -   Industrial Technology Research Institute
     Sen Yih Chou
     +886 (03) 5743887
