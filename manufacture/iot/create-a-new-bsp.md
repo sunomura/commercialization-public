@@ -15,7 +15,7 @@ A BSP includes a set of device drivers that are specific to the components/silic
 
 Create a new Board Support Package (BSP) when:
 
--  Creating a new hardare design
+-  Creating a new hardware design
 
 -  Replacing a driver or component on an existing hardware design
 
