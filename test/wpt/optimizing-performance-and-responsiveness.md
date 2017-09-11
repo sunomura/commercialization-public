@@ -74,7 +74,7 @@ Because the number of processors in a system is limited, all threads cannot be r
 
 Threads being executed are in the **Running** state. Threads that can execute, but are currently not running, are in the **Ready** state. Threads that cannot run (because they are waiting for a particular event) are in the **Waiting** state. The following figure illustrates the possible thread transitions.
 
-![Diagram illustrates the possible thread transitions.](images/optimizingperformancelab1.png)
+![Diagram illustrates the possible thread transitions.](images/optimizingperformancelab1a.png)
 
 1.  A thread in the **Running** state initiates a transition to the **Waiting** state by calling a wait function such as **WaitForSingleObject** or **Sleep(&gt; 0)**.
 

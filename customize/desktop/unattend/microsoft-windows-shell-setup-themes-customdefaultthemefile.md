@@ -16,15 +16,12 @@ ms.technology: windows-oem
 
 # CustomDefaultThemeFile
 
+> [!Important]
+> This setting is deprecated. Theme files can no longer be set as the default Windows theme. Instead, customize the following elements of the Windows default theme using Unattend.xml: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md), [ThemeName](microsoft-windows-shell-setup-themes-themename.md), [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [UWPAppsUseLightTheme](microsoft-windows-shell-setup-themes-uwpappsuselighttheme.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
 `CustomDefaultThemeFile` specifies the path to a customized theme file. These files may include a .bmp file for customized background.
 
-**Note**  
-This setting is deprecated.
-
-While you can add themes to a Windows 7 or Windows 8 installation by using a .theme file, .theme files can no longer be used as the default theme.
-
-To define a default theme, use the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [ThemeName](microsoft-windows-shell-setup-themes-themename.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
+While you can create additional custom themes by adding .theme files to a Windows installation (using [these instructions](https://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx(d=robot)#boot)), .theme files can no longer be used as the default theme.
 
  
 
@@ -49,8 +46,8 @@ To define a default theme, use the settings: [BrandIcon](microsoft-windows-shell
 
 This string type supports empty elements.
 
-**Note**  
-The background color or design must not, in any way, obscure the Windows desktop icons, taskbar, **Start** button, or **Start** menu, or otherwise impair the functionality of the user interface. Users must be able to view and to use the Windows desktop for its intended purpose, which is to provide easy access to icons and to folders.
+> [!Note] 
+> The background color or design must not, in any way, obscure the Windows desktop icons, taskbar, **Start** button, or **Start** menu, or otherwise impair the functionality of the user interface. Users must be able to view and to use the Windows desktop for its intended purpose, which is to provide easy access to icons and to folders.
 
  
 

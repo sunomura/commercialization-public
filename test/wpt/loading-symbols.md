@@ -25,16 +25,6 @@ You can set the following user preferences in Windows Performance Analyzer (WPA
 
 To change these options, open a recording and then select the option on the **Trace** menu.
 
-In this article:
-
--   [Managed Symbols](#mansym)
-
--   [Relative Paths and Embedded Environment Variables](#relative)
-
--   [SymCache Path](#symcachepath)
-
--   [Symbol Path](#symbolpath)
-
 ## <a href="" id="mansym"></a>Managed Symbols
 
 

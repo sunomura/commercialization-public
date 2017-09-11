@@ -14,7 +14,7 @@ ms.technology: windows-oem
 # Automate Windows Setup
 
 
-You can prevent some or all of the user interface (UI) pages from Windows® Setup from being displayed during installation. The default behavior of Windows Setup is to display the Setup UI if any of the required settings are incorrect or empty.
+You can prevent some or all of the user interface (UI) pages from Windows Setup from being displayed during installation. The default behavior of Windows Setup is to display the Setup UI if any of the required settings are incorrect or empty.
 
 ## <span id="Use_an_answer_file_while_installing_Windows"></span><span id="use_an_answer_file_while_installing_windows"></span><span id="USE_AN_ANSWER_FILE_WHILE_INSTALLING_WINDOWS"></span>Use an answer file while installing Windows
 
@@ -23,24 +23,15 @@ You can automate Windows installation by using an answer file:
 
 **Use a USB flash drive**
 
-1.  Use a sample answer file or create your own with Windows System Image Manager (Windows SIM).
+1.  Use an existing answer file or [create your own with Windows System Image Manager (Windows SIM)](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference).
 
 2.  Save the file as **Autounattend.xml** on the root of a USB flash drive.
 
-3.  On a new PC, put in the Windows product DVD and the USB flash drive, and then boot the PC. When no other answer file is selected, Windows Setup searches for this file.
+3.  On a new PC, insert a Windows installation USB flash drive, as well as the flash drive that contains **Autounattend.xml**  and then boot the PC. When no other answer file is selected, Windows Setup searches for this file.
 
 **Select an answer file**
 
--   You can select a specific answer file during installation by booting to the Windows Preinstallation Environment, and using the **setup.exe** command with the **/unattend:***filename* option.
-
-For sample answer files and a list of settings used to automate installation, see Settings for Automating Windows Setup.
-
-## <span id="Sample_answer_files"></span><span id="sample_answer_files"></span><span id="SAMPLE_ANSWER_FILES"></span>Sample answer files
-
-
-The following sample files are included in the Windows Assessment and Deployment Kit (Windows ADK) in the following folder:
-
-C:\\Program Files (x86)\\Windows Kits\\8.0\\Assessment and Deployment Kit\\Deployment Tools\\Samples\\Unattend.
+-   You can select a specific answer file during installation by booting to the Windows Preinstallation Environment, and [using the **setup.exe** command with the **/unattend:***filename* option](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options#28).
 
 ## <span id="List_of_settings"></span><span id="list_of_settings"></span><span id="LIST_OF_SETTINGS"></span>List of settings
 

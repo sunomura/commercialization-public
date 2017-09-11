@@ -17,12 +17,10 @@ ms.technology: windows-oem
 # ThemeName
 
 
-`ThemeName` specifies the name of a theme.
+`ThemeName` specifies the name of your custom theme.
 
-Themes enable users to customize elements of the Windows visual style, including elements such as the desktop, background, and screen saver.
-
-**Note**  NOTE: In Windows 10, if you use this (DesktopBackground/ThemeName) setting, you’ll also need to set (ThemeName/DesktopBackground).
-
+> [!Note]
+> In Windows 10, if you use this (DesktopBackground/ThemeName) setting, you’ll also need to set (ThemeName/DesktopBackground).
  
 
 ## Values

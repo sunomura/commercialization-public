@@ -39,6 +39,10 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 <td><p>This section lists the topics that provide details about the Precision Touchpad tests in the Windows Hardware Lab Kit (HLK) for Windows 10.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Hardware Requirements and Vendor Information](ptp-hardware-requirements-and-vendor-information.md)</p></td>
+<td><p>This topic provides a list of the test equipment that is required for the touch-related tests in the Windows Hardware Lab Kit (HLK), and information about the vendors who stock the listed equipment.</p></td>
+</tr>
+<tr class="odd">
 <td><p>[Appendix](precision-touchpad-appendix.md)</p></td>
 <td><p>The appendix for the Windows Precision Touchpad Validation Guide, provides information about common error messages, along with some HID-specific ones.</p></td>
 </tr>

@@ -44,17 +44,17 @@ A regions of interest file does support regular expressions (regex). For informa
 
 You can use a Regions of Interest file to apply additional markup to an open trace in WPA:
 
--   From the menu, choose **Trace**, **Trace Properties**.
+1.   From the menu, choose **Trace**, **Trace Properties**.
 
--   In the **Trace Properties** pane that appears, choose **Add**.
+2.   In the **Trace Properties** pane that appears, choose **Add**.
 
--   Navigate to and select the desired Regions of Interest manifest file (.xml), and choose **Open**.
+3.   Navigate to and select the desired Regions of Interest manifest file (.xml), and choose **Open**.
 
--   The file is now added to the **Regions of Interest Definitions** listbox. Switch back to the **Analysis** pane by selecting the **Analysis** tab near the top of the window.
+4.   The file is now added to the **Regions of Interest Definitions** listbox. Switch back to the **Analysis** pane by selecting the **Analysis** tab near the top of the window.
 
--   In the **Graph Explorer**, expand the **System Activity** node.
+5.   In the **Graph Explorer**, expand the **System Activity** node.
 
--   If your trace contains any of the regions that were defined by the manifest file, the **Regions of Interest** graph appears in **Graph Explorer** as the last graph under **System Activity** (immediately before the **Computation** category). Drag the graph onto the **Analysis** pane.
+6.   If your trace contains any of the regions that were defined by the manifest file, the **Regions of Interest** graph appears in **Graph Explorer** as the last graph under **System Activity** (immediately before the **Computation** category). Drag the graph onto the **Analysis** pane.
 
     If the trace does not contain any regions of interest, you will not see a **Regions of Interest** graph.
 

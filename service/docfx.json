@@ -29,7 +29,8 @@
     "externalReference": [],
     "globalMetadata": {
 	    "uhfHeaderId": "MSDocsHeader-WinHW",
-        "breadcrumb_path": "/windows-hardware/service/breadcrumbs/toc.json"
+        "breadcrumb_path": "/windows-hardware/service/breadcrumbs/toc.json",
+		"searchScope": ["OEM"]
 	},
     "fileMetadata": {},
     "template": [],

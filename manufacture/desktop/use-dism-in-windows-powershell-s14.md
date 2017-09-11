@@ -215,11 +215,11 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
 **Install the Windows Assessment and Deployment Kit (Optional)**
 
--   The DISM PowerShell module is included in Windows 10 and Windows Server 2016 Technical Preview. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module.
+The DISM PowerShell module is included in Windows 10 and Windows Server 2016. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module.
 
 **Install Windows PowerShell 5.0**
 
--   For Windows 10 and Windows Server 2016 Technical Preview, Windows Powershell 5.0 is included in the installation. For other older supported versions of Windows and Windows Server, you must install Windows Management Framework 5.0. You can download and install [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) from the Microsoft Download Center.
+For Windows 10 and Windows Server 2016, Windows Powershell 5.0 is included in the installation. For other older supported versions of Windows and Windows Server, you must install Windows Management Framework 5.0. You can download and install [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) from the Microsoft Download Center.
 
 **To prepare the DISM PowerShell Environment**
 
@@ -227,9 +227,9 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
 2.  Import the DISM PowerShell module.
 
-    The DISM PowerShell module is included in Windows 10 and Windows Server 2016 Technical Preview and does not need to be imported.
+    The DISM PowerShell module is included in Windows 10 and Windows Server 2016 and does not need to be imported.
 
-    On other supported operating systems, you can use the DISM PowerShell module included in the Windows ADK. By default, the module is installed with the Windows ADK in the DISM folder at *&lt;x86 or amd64&gt;*\\DISM\\ under the path: C:\\Program Files (x86)\\Windows Kits\\10.0\\Assessment and Deployment Kit\\Deployment Tools\\ in Windows 10. To import this module, at the command prompt, type:
+    On other supported operating systems, you can use the DISM PowerShell module included in the Windows ADK. By default, the module is installed with the Windows ADK in the DISM folder at *&lt;x86 or amd64&gt;*\\DISM\\ under the path: `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\` in Windows 10. To import this module, at the command prompt, type:
 
     ```
     import-module <path to DISM folder>
@@ -238,7 +238,7 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
     For example, using the Windows 10 version of the Windows ADK on a 64-bit PC type:
 
     ```
-    import-module "C:\Program Files (x86)\Windows Kits\10.0\Assessment and Deployment Kit\Deployment Tools\amd64\DISM"
+    import-module "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM"
     ```
 
     **Note**  
@@ -256,17 +256,17 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
 **To get Help for DISM PowerShell cmdlets**
 
--   To get the syntax to use with a cmdlet, at a command prompt, type:
+To get the syntax to use with a cmdlet, at a command prompt, type:
 
-    ```
-    get-help <cmdlet name>
-    ```
+```
+get-help <cmdlet name>
+```
 
-    For example, type:
+For example, type:
 
-    ```
-    get-help get-WindowsImage
-    ```
+```
+get-help get-WindowsImage
+```
 
 ## <span id="related_topics"></span>Related topics
 

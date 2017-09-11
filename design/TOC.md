@@ -197,6 +197,7 @@
 ###### [Enable, Disable Toggle Button](component-guidelines/touchpad-toggle-button-to-enable-or-disable.md)
 ##### [Precision Touchpad Validation Guide](component-guidelines/precision-touchpad-validation-guide.md)
 ###### [General Testing Guidelines](component-guidelines/precision-touchpad-general-testing-guidelines.md)
+###### [Hardware Requirements and Vendor Information](component-guidelines/ptp-hardware-requirements-and-vendor-information.md)
 ###### [Precision Touchpad Tests](component-guidelines/precision-touchpad-tests.md)
 ####### [Aliasing](component-guidelines/aliasing.md)
 ####### [All Areas Reported](component-guidelines/all-areas-reported.md)

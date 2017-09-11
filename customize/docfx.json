@@ -29,9 +29,10 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-	    "uhfHeaderId": "MSDocsHeader-WinHW",
-        "breadcrumb_path": "/windows-hardware/customize/breadcrumbs/toc.json"
-	},
+        "uhfHeaderId": "MSDocsHeader-WinHW",
+        "breadcrumb_path": "/windows-hardware/customize/breadcrumbs/toc.json",
+        "searchScope": ["OEM"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "oem-customize"

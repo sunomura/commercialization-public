@@ -8,7 +8,7 @@ ms.assetid: 0C9C56E4-0FCC-403F-AD29-A4919133D671
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -213,6 +213,17 @@ oobeSystem
 
 
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
+
+## XML Example
+
+
+```
+<settings pass="specialize">        
+    <component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <DeviceForm>3</DeviceForm>
+    </component>
+</settings>
+```
 
 ## Related topics
 

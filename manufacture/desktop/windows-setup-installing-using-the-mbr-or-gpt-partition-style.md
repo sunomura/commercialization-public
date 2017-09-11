@@ -20,9 +20,9 @@ For example, if you receive the error message: “Windows cannot be installed to
 
 1.  Reboot the PC in legacy BIOS-compatibility mode. This option lets you keep the existing partition style. For more info, see [Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md).
 
-2.  Reformat the drive for UEFI by using the GPT partition style. This option lets you use the PC’s UEFI firmware features.
+2.  Configure your drive for UEFI by using the GPT partition style. This option lets you use the PC’s UEFI firmware features.
 
-    You can do this yourself by reformatting the drive using the instructions below, or if you need to preserve the data, use a third-party utility to convert the drive to GPT format.
+    You can preserve your data and convert the drive using the [MBR2GPT tool](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt). You can also choose to reformat the drive using the instructions below. Reformatting will erase all the data on the drive.
 
 ## <span id="Why_should_I_convert_my_drive_"></span><span id="why_should_i_convert_my_drive_"></span><span id="WHY_SHOULD_I_CONVERT_MY_DRIVE_"></span>Why should I convert my drive?
 

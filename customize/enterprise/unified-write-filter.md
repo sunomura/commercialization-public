@@ -17,8 +17,8 @@ ms.technology: windows-oem
 
 You can use the Unified Write Filter (UWF) feature on your device to help protect your physical storage media, including most standard writable storage types that are supported by Microsoft Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.
 
-**Important**  
-You cannot use UWF to protect external removable drives, USB devices or flash drives.
+> [!Important]  
+> You cannot use UWF to protect external removable drives, USB devices or flash drives.
 
  
 
@@ -26,8 +26,8 @@ UWF intercepts all write attempts to a protected volume and redirects those writ
 
 The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume.
 
-**Note**  
-UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
+> [!Note]  
+> UWF fully supports the NTFS file system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
 
  
 
@@ -99,7 +99,8 @@ If Windows has already been installed and you are applying a provisioning packag
 
     In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
 
-    **Note**  When setting the file exclusion in Windows ICD, you do not need to specify the drive letter since that is already input via the Volume protection setting. For example, if the file being excluded is C:\\testdir\\test.txt, after adding a drive in Volume protection, you only need to input \\testdir\\test.txt to add this file exclusion.
+    > [!Note]
+    > When setting the file exclusion in Windows ICD, you do not need to specify the drive letter since that is already input via the Volume protection setting. For example, if the file being excluded is C:\\testdir\\test.txt, after adding a drive in Volume protection, you only need to input \\testdir\\test.txt to add this file exclusion.
 
      
 
@@ -129,8 +130,8 @@ The first time you enable UWF on your device, UWF makes the following changes to
 
 You can change these settings after you turn on UWF if you want to. For example, you can move the page file location to an unprotected volume and re-enable paging files.
 
-**Important**  
-If you add UWF to your image by using SMI settings in an unattend.xml file, turning on UWF only sets the **bootstatuspolicy** BCD setting and turns off the defragmentation service. In this case, you must manually turn off the other features and services if you want to increase the performance of UWF.
+> [!Important] 
+> If you add UWF to your image by using SMI settings in an unattend.xml file, turning on UWF only sets the **bootstatuspolicy** BCD setting and turns off the defragmentation service. In this case, you must manually turn off the other features and services if you want to increase the performance of UWF.
 
  
 
@@ -164,8 +165,8 @@ A volume is a logical unit that represents an area of persistent storage to the 
 
 UWF supports all fixed volume types (except for external USB volumes), including master boot record (MBR) volumes and GUID partition table (GPT) volumes.
 
-**Important**  
-UWF does not support Storage Spaces. For more information, see [Storage Spaces Overview](http://go.microsoft.com/fwlink/?LinkId=690587).
+> [!Important]  
+> UWF does not support Storage Spaces. For more information, see [Storage Spaces Overview](http://go.microsoft.com/fwlink/?LinkId=690587).
 
  
 
@@ -178,8 +179,8 @@ If you specify a volume using a drive letter, UWF uses *loose binding* to recogn
 
 If you want to protect a volume with UWF while excluding specific files, folders, or registry keys from being filtered by UWF, you can add them to an exclusion list.
 
-**Note**  
-On non-NTFS file system and non-FAT volumes, for example, Extended File Allocation Table (exFAT) volumes, you can protect the volume, but cannot create file exclusions or do file commit operations on the volume. Note that writes to excluded files still influence the growth of the Overlay.
+> [!Note]  
+> On non-NTFS file system and non-FAT volumes, for example, Extended File Allocation Table (exFAT) volumes, you can protect the volume, but cannot create file exclusions or do file commit operations on the volume. Note that writes to excluded files still influence the growth of the Overlay.
 
  
 
@@ -189,23 +190,23 @@ You can add specific files or folders on a protected volume to a file exclusion 
 
 You must use an administrator account to add or remove file or folder exclusions during run time, and you must restart the device for new exclusions to take effect.
 
-**Important**  
-You cannot add exclusions for the following items:
-
--   \\Windows\\System32\\DEFAULT
--   \\Windows\\System32\\SAM
--   \\Windows\\System32\\SECURITY
--   \\Windows\\System32\\SOFTWARE
--   \\Windows\\System32\\SYSTEM
--   \\Users\\*&lt;User Name&gt;*\\NTUSER.DAT
-
-You also cannot add exclusions for the following items:
-
--   The volume root. For example, C: or D:.
--   The \\Windows folder on the system volume.
--   The \\Windows\\System32 folder on the system volume.
--   The \\Windows\\System32\\Drivers folder on the system volume.
--   Paging files.
+> [!Important]  
+> You cannot add exclusions for the following items:
+> 
+> -   \\Windows\\System32\\config\\DEFAULT
+> -   \\Windows\\System32\\config\\SAM
+> -   \\Windows\\System32\\config\\SECURITY
+> -   \\Windows\\System32\\config\\SOFTWARE
+> -   \\Windows\\System32\\config\\SYSTEM
+> -   \\Users\\*&lt;User Name&gt;*\\NTUSER.DAT
+> 
+> You also cannot add exclusions for the following items:
+> 
+> -   The volume root. For example, C: or D:.
+> -   The \\Windows folder on the system volume.
+> -   The \\Windows\\System32 folder on the system volume.
+> -   The \\Windows\\System32\\Drivers folder on the system volume.
+> -   Paging files.
 
 However, you can exclude subdirectories and files under these items.
 
@@ -248,8 +249,8 @@ If you exclude a registry key, all its subkeys are also excluded from filtering.
 -   HKEY\_LOCAL\_MACHINE\\SECURITY
 -   HKEY\_LOCAL\_MACHINE\\COMPONENTS
 
-**Note**  
-UWF automatically excludes certain registry keys from being filtered. These registry keys are primarily related to UWF configuration settings and cannot be removed from the exclusion list.
+> [!Note]
+> UWF automatically excludes certain registry keys from being filtered. These registry keys are primarily related to UWF configuration settings and cannot be removed from the exclusion list.
 
  
 

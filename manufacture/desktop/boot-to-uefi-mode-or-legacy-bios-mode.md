@@ -23,7 +23,7 @@ After Windows is installed, the device boots automatically using the same mode i
 
 1. Open the firmware menus. You can use any of these methods: 
 
-   *  Boot the PC, and press the manufacturer’s key to open the menus. Common keys used: **Esc, Delete, F1, F2, F10, F11, or F12**. On tablets, common buttons are **Volume up or Volume down**. During startup, there’s often a screen that mentions the key. If there’s not one, or if the screen goes by too fast to see it, check your manufacturer’s site. 
+   *  Boot the PC, and press the manufacturer’s key to open the menus. Common keys used: **Esc, Delete, F1, F2, F10, F11, or F12**. On tablets, common buttons are **Volume up or Volume down** ([find more common keys and buttons](https://www.bing.com/search?q=bios+menu+key+brand)). During startup, there’s often a screen that mentions the key. If there’s not one, or if the screen goes by too fast to see it, check your manufacturer’s site. 
    
    *  Or, if Windows is already installed, from either the Sign on screen or the Start menu, select **Power (![Power button icon](images/power.png)) >** hold **Shift** while selecting **Restart**. Select **Troubleshoot > Advanced options > UEFI Firmware settings**. 
       
@@ -37,7 +37,7 @@ After Windows is installed, the device boots automatically using the same mode i
 
     Some older PCs (Windows 7-era or earlier) support UEFI, but require you to browse to the boot file. From the firmware menus, look for the option: "Boot from file", then browse to \EFI\BOOT\BOOTX64.EFI on Windows PE or Windows Setup media.
 
-## Detecting UEFI or BIOS mode on a factory floor
+## Detect UEFI or BIOS mode on a factory floor
 
 Before installing Windows, check to make sure your firmware is booted to the right mode using any of these methods:
 
