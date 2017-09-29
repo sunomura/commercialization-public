@@ -21,820 +21,208 @@ Use keyboard identifiers and Input Method Editors (IMEs) identify the keyboard t
 
 The following table lists keyboard identifiers that are available for Windows. You can also install support for additional keyboard types. The valid keyboards that can be configured for your device are listed in the registry key: **HKEY\_LOCAL\_MACHINE\\SYSTEM\\ControlSet001\\Control\\Keyboard Layouts**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Keyboard</th>
-<th align="left">Keyboard identifier (hexadecimal)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Albanian</p></td>
-<td align="left"><p>0x0000041c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Arabic (101)</p></td>
-<td align="left"><p>0x00000401</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Arabic (102)</p></td>
-<td align="left"><p>0x00010401</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Arabic (102) AZERTY</p></td>
-<td align="left"><p>0x00020401</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Armenian Eastern</p></td>
-<td align="left"><p>0x0000042b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Armenian Phonetic</p></td>
-<td align="left"><p>0x0002042b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Armenian Typewriter</p></td>
-<td align="left"><p>0x0003042b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Armenian Western</p></td>
-<td align="left"><p>0x0001042b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Assamese - Inscript</p></td>
-<td align="left"><p>0x0000044d</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Azerbaijani (Standard)</p></td>
-<td align="left"><p>0x0001042c</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Azerbaijani Cyrillic</p></td>
-<td align="left"><p>0x0000082c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Azerbaijani Latin</p></td>
-<td align="left"><p>0x0000042c</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Bashkir</p></td>
-<td align="left"><p>0x0000046d</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Belarusian</p></td>
-<td align="left"><p>0x00000423</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Belgian (Comma)</p></td>
-<td align="left"><p>0x0001080c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Belgian (Period)</p></td>
-<td align="left"><p>0x00000813</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Belgian French</p></td>
-<td align="left"><p>0x0000080c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Bangla (Bangladesh)</p></td>
-<td align="left"><p>0x00000445</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Bangla (India)</p></td>
-<td align="left"><p>0x00020445</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Bangla (India - Legacy)</p></td>
-<td align="left"><p>0x00010445</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Bosnian (Cyrillic)</p></td>
-<td align="left"><p>0x0000201a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Buginese</p></td>
-<td align="left"><p>0x000b0c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Bulgarian</p></td>
-<td align="left"><p>0x0030402</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Bulgarian (Latin)</p></td>
-<td align="left"><p>0x00010402</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Bulgarian (phonetic layout)</p></td>
-<td align="left"><p>0x00020402</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Bulgarian (phonetic traditional)</p></td>
-<td align="left"><p>0x00040402</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Bulgarian (Typewriter)</p></td>
-<td align="left"><p>0x00000402</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Canadian French</p></td>
-<td align="left"><p>0x00001009</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Canadian French (Legacy)</p></td>
-<td align="left"><p>0x00000c0c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Canadian Multilingual Standard</p></td>
-<td align="left"><p>0x00011009</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Central Atlas Tamazight</p></td>
-<td align="left"><p>0x0000085f</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Central Kurdish</p></td>
-<td align="left"><p>0x00000429</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Cherokee Nation</p></td>
-<td align="left"><p>0x0000045c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Cherokee Nation Phonetic</p></td>
-<td align="left"><p>0x0001045c</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Chinese (Simplified) - US Keyboard</p></td>
-<td align="left"><p>0x00000804</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Chinese (Traditional) - US Keyboard</p></td>
-<td align="left"><p>0x00000404</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Chinese (Traditional, Hong Kong S.A.R.)</p></td>
-<td align="left"><p>0x00000c04</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Chinese (Traditional Macao S.A.R.) US Keyboard</p></td>
-<td align="left"><p>0x00001404</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Chinese (Simplified, Singapore) - US keyboard</p></td>
-<td align="left"><p>0x00001004</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Croatian</p></td>
-<td align="left"><p>0x0000041a</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Czech</p></td>
-<td align="left"><p>0x00000405</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Czech (QWERTY)</p></td>
-<td align="left"><p>0x00010405</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Czech Programmers</p></td>
-<td align="left"><p>0x00020405</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Danish</p></td>
-<td align="left"><p>0x00000406</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Devanagari-INSCRIPT</p></td>
-<td align="left"><p>0x00000439</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Divehi Phonetic</p></td>
-<td align="left"><p>0x00000465</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Divehi Typewriter</p></td>
-<td align="left"><p>0x00010465</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Dutch</p></td>
-<td align="left"><p>0x00000413</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Dzongkha</p></td>
-<td align="left"><p>0x00000C51</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Estonian</p></td>
-<td align="left"><p>0x00000425</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Faeroese</p></td>
-<td align="left"><p>0x00000438</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Finnish</p></td>
-<td align="left"><p>0x0000040b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Finnish with Sami</p></td>
-<td align="left"><p>0x0001083b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>French</p></td>
-<td align="left"><p>0x0000040c</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Futhark</p></td>
-<td align="left"><p>0x00120c00</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Georgian</p></td>
-<td align="left"><p>0x00000437</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Georgian (Ergonomic)</p></td>
-<td align="left"><p>0x00020437</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Georgian (QWERTY)</p></td>
-<td align="left"><p>0x00010437</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Georgian Ministry of Education and Science Schools</p></td>
-<td align="left"><p>0x00030437</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Georgian (Old Alphabets)</p></td>
-<td align="left"><p>0x00040437</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>German</p></td>
-<td align="left"><p>0x00000407</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>German (IBM)</p></td>
-<td align="left"><p>0x00010407</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Gothic</p></td>
-<td align="left"><p>0x000c0c00</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Greek</p></td>
-<td align="left"><p>0x00000408</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Greek (220)</p></td>
-<td align="left"><p>0x00010408</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Greek (220) Latin</p></td>
-<td align="left"><p>0x00030408</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Greek (319)</p></td>
-<td align="left"><p>0x00020408</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Greek (319) Latin</p></td>
-<td align="left"><p>0x00040408</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Greek Latin</p></td>
-<td align="left"><p>0x00050408</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Greek Polytonic</p></td>
-<td align="left"><p>0x00060408</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Greenlandic</p></td>
-<td align="left"><p>0x0000046f</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Guarani</p></td>
-<td align="left"><p>0x00000474</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Gujarati</p></td>
-<td align="left"><p>0x00000447</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Hausa</p></td>
-<td align="left"><p>0x00000468</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Hebrew</p></td>
-<td align="left"><p>0x0000040d</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Hindi Traditional</p></td>
-<td align="left"><p>0x00010439</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Hungarian</p></td>
-<td align="left"><p>0x0000040e</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Hungarian 101-key</p></td>
-<td align="left"><p>0x0001040e</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Icelandic</p></td>
-<td align="left"><p>0x0000040f</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Igbo</p></td>
-<td align="left"><p>0x00000470</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>India</p></td>
-<td align="left"><p>0x000004009</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Inuktitut - Latin</p></td>
-<td align="left"><p>0x0000085d</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Inuktitut - Naqittaut</p></td>
-<td align="left"><p>0x0001045d</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Irish</p></td>
-<td align="left"><p>0x00001809</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Italian</p></td>
-<td align="left"><p>0x00000410</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Italian (142)</p></td>
-<td align="left"><p>0x00010410</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Japanese</p></td>
-<td align="left"><p>0x00000411</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Javanese</p></td>
-<td align="left"><p>0x00110c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Kannada</p></td>
-<td align="left"><p>0x0000044b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Kazakh</p></td>
-<td align="left"><p>0x0000043f</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Khmer</p></td>
-<td align="left"><p>0x00000453</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Khmer (NIDA)</p></td>
-<td align="left"><p>0x00010453</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Korean</p></td>
-<td align="left"><p>0x00000412</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Kyrgyz Cyrillic</p></td>
-<td align="left"><p>0x00000440</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Lao</p></td>
-<td align="left"><p>0x00000454</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Latin American</p></td>
-<td align="left"><p>0x0000080a</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Latvian (Standard)</p></td>
-<td align="left"><p>0x00020426</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Latvian (Legacy)</p></td>
-<td align="left"><p>0x00010426</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Lisu (Basic)</p></td>
-<td align="left"><p>0x00070c00</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Lisu (Standard)</p></td>
-<td align="left"><p>0x00080c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Lithuanian</p></td>
-<td align="left"><p>0x00010427</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Lithuanian IBM</p></td>
-<td align="left"><p>0x00000427</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Lithuanian Standard</p></td>
-<td align="left"><p>0x00020427</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Luxembourgish</p></td>
-<td align="left"><p>0x0000046e</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Macedonia (FYROM)</p></td>
-<td align="left"><p>0x0000042f</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Macedonia (FYROM) - Standard</p></td>
-<td align="left"><p>0x0001042f</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Malayalam</p></td>
-<td align="left"><p>0x0000044c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Maltese 47-Key</p></td>
-<td align="left"><p>0x0000043a</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Maltese 48-key</p></td>
-<td align="left"><p>0x0001043a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Maori</p></td>
-<td align="left"><p>0x00000481</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Marathi</p></td>
-<td align="left"><p>0x0000044e</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Mongolian (Mongolian Script - Legacy)</p></td>
-<td align="left"><p>0x00000850</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Mongolian (Mongolian Script - Standard)</p></td>
-<td align="left"><p>0x00020850</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Mongolian Cyrillic</p></td>
-<td align="left"><p>0x00000450</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Myanmar</p></td>
-<td align="left"><p>0x00010c00</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>N'ko</p></td>
-<td align="left"><p>0x00090c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Nepali</p></td>
-<td align="left"><p>0x00000461</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>New Tai Lue</p></td>
-<td align="left"><p>0x00020c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Norwegian</p></td>
-<td align="left"><p>0x00000414</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Norwegian with Sami</p></td>
-<td align="left"><p>0x0000043b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Odia</p></td>
-<td align="left"><p>0x00000448</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Ol Chiki</p></td>
-<td align="left"><p>0x000d0c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Old Italic</p></td>
-<td align="left"><p>0x000f0c00</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Osmanya</p></td>
-<td align="left"><p>0x000e0c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Pashto (Afghanistan)</p></td>
-<td align="left"><p>0x00000463</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Persian</p></td>
-<td align="left"><p>0x00000429</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Persian (Standard)</p></td>
-<td align="left"><p>0x00050429</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Phags-pa</p></td>
-<td align="left"><p>0x000a0c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Polish (214)</p></td>
-<td align="left"><p>0x00010415</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Polish (Programmers)</p></td>
-<td align="left"><p>0x00000415</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Portuguese</p></td>
-<td align="left"><p>0x00000816</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Portuguese (Brazilian ABNT)</p></td>
-<td align="left"><p>0x00000416</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Portuguese (Brazilian ABNT2)</p></td>
-<td align="left"><p>0x00010416</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Punjabi</p></td>
-<td align="left"><p>0x00000446</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Romanian (Legacy)</p></td>
-<td align="left"><p>0x00000418</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Romanian (Programmers)</p></td>
-<td align="left"><p>0x00020418</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Romanian (Standard)</p></td>
-<td align="left"><p>0x00010418</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Russian</p></td>
-<td align="left"><p>0x00000419</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Russian - Mnemonic</p></td>
-<td align="left"><p>0x00020419</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Russian (Typewriter)</p></td>
-<td align="left"><p>0x00010419</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sakha</p></td>
-<td align="left"><p>0x00000485</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sami Extended Finland-Sweden</p></td>
-<td align="left"><p>0x0002083b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sami Extended Norway</p></td>
-<td align="left"><p>0x0001043b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Scottish Gaelic</p></td>
-<td align="left"><p>0x00011809</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Serbian (Cyrillic)</p></td>
-<td align="left"><p>0x00000c1a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Serbian (Latin)</p></td>
-<td align="left"><p>0x0000081a</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sesotho sa Leboa</p></td>
-<td align="left"><p>0x0000046c</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Setswana</p></td>
-<td align="left"><p>0x00000432</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sinhala</p></td>
-<td align="left"><p>0x0000045b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sinhala - wij 9</p></td>
-<td align="left"><p>0x0001045b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Slovak</p></td>
-<td align="left"><p>0x0000041b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Slovak (QWERTY)</p></td>
-<td align="left"><p>0x0001041b</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Slovenian</p></td>
-<td align="left"><p>0x00000424</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sora</p></td>
-<td align="left"><p>0x00100c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sorbian Extended</p></td>
-<td align="left"><p>0x0001042e</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sorbian Standard</p></td>
-<td align="left"><p>0x0002042e</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sorbian Standard (Legacy)</p></td>
-<td align="left"><p>0x0000042e</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Spanish</p></td>
-<td align="left"><p>0x0000040a</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Spanish Variation</p></td>
-<td align="left"><p>0x0001040a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Swedish</p></td>
-<td align="left"><p>0x0000041d</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Swedish with Sami</p></td>
-<td align="left"><p>0x0000083b</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Swiss French</p></td>
-<td align="left"><p>0x0000100c</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Swiss German</p></td>
-<td align="left"><p>0x00000807</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Syriac</p></td>
-<td align="left"><p>0x0000045a</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Syriac Phonetic</p></td>
-<td align="left"><p>0x0001045a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Tai Le</p></td>
-<td align="left"><p>0x00030c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Tajik</p></td>
-<td align="left"><p>0x00000428</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Tamil</p></td>
-<td align="left"><p>0x00000449</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Tatar</p></td>
-<td align="left"><p>0x00010444</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Tatar (Legacy)</p></td>
-<td align="left"><p>0x00000444</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Telugu</p></td>
-<td align="left"><p>0x0000044a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Thai Kedmanee</p></td>
-<td align="left"><p>0x0000041e</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Thai Kedmanee (non-ShiftLock)</p></td>
-<td align="left"><p>0x0002041e</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Thai Pattachote</p></td>
-<td align="left"><p>0x0001041e</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Thai Pattachote (non-ShiftLock)</p></td>
-<td align="left"><p>0x0003041e</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Tibetan (PRC - Standard)</p></td>
-<td align="left"><p>0x00010451</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Tibetan (PRC - Legacy)</p></td>
-<td align="left"><p>0x00000451</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Tifinagh (Basic)</p></td>
-<td align="left"><p>0x00050c00</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Tifinagh (Full)</p></td>
-<td align="left"><p>0x00060c00</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Turkish F</p></td>
-<td align="left"><p>0x0001041f</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Turkish Q</p></td>
-<td align="left"><p>0x0000041f</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Turkmen</p></td>
-<td align="left"><p>0x00000442</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Uyghur</p></td>
-<td align="left"><p>0x00010408</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Uyghur (Legacy)</p></td>
-<td align="left"><p>0x00000480</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Ukrainian</p></td>
-<td align="left"><p>0x00000422</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Ukrainian (Enhanced)</p></td>
-<td align="left"><p>0x00020422</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>United Kingdom</p></td>
-<td align="left"><p>0x00000809</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>United Kingdom Extended</p></td>
-<td align="left"><p>0x00000452</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>United States - Dvorak</p></td>
-<td align="left"><p>0x00010409</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>United States - International</p></td>
-<td align="left"><p>0x00020409</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>United States-Dvorak for left hand</p></td>
-<td align="left"><p>0x00030409</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>United States-Dvorak for right hand</p></td>
-<td align="left"><p>0x00040409</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>United States - English</p></td>
-<td align="left"><p>0x00000409</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Urdu</p></td>
-<td align="left"><p>0x00000420</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Uyghur</p></td>
-<td align="left"><p>0x00010480</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Uzbek Cyrillic</p></td>
-<td align="left"><p>0x00000843</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Vietnamese</p></td>
-<td align="left"><p>0x0000042a</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Wolof</p></td>
-<td align="left"><p>0x00000488</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Yakut</p></td>
-<td align="left"><p>0x00000485</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Yoruba</p></td>
-<td align="left"><p>0x0000046a</p></td>
-</tr>
-</tbody>
-</table>
+| Keyboard | Keyboard identifier (hexadecimal) |
+| --- | --- |
+| Albanian | 0x0000041c |
+| Arabic (101) | 0x00000401 |
+| Arabic (102) | 0x00010401 |
+| Arabic (102) AZERTY | 0x00020401 |
+| Armenian Eastern | 0x0000042b |
+| Armenian Phonetic | 0x0002042b |
+| Armenian Typewriter | 0x0003042b |
+| Armenian Western | 0x0001042b |
+| Assamese - Inscript | 0x0000044d |
+| Azerbaijani (Standard) | 0x0001042c |
+| Azerbaijani Cyrillic | 0x0000082c |
+| Azerbaijani Latin | 0x0000042c |
+| Bashkir | 0x0000046d |
+| Belarusian| 0x00000423 | 
+| Belgian (Comma) | 0x0001080c | 
+| Belgian (Period) | 0x00000813 | 
+| Belgian French | 0x0000080c | 
+| Bangla (Bangladesh)| 0x00000445 | 
+| Bangla (India) | 0x00020445 | 
+| Bangla (India - Legacy) | 0x00010445 |
+| Bosnian (Cyrillic) | 0x0000201a | 
+| Buginese | 0x000b0c00 | 
+| Bulgarian | 0x0030402 | 
+| Bulgarian (Latin) | 0x00010402 | 
+| Bulgarian (phonetic layout) | 0x00020402 | 
+| Bulgarian (phonetic traditional) | 0x00040402 | 
+| Bulgarian (Typewriter) | 0x00000402 | 
+| Canadian French | 0x00001009 | 
+| Canadian French (Legacy) | 0x00000c0c | 
+| Canadian Multilingual Standard | 0x00011009 | 
+| Central Atlas Tamazight | 0x0000085f | 
+| Central Kurdish | 0x00000429 | 
+| Cherokee Nation | 0x0000045c | 
+| Cherokee Nation Phonetic | 0x0001045c | 
+| Chinese (Simplified) - US Keyboard | 0x00000804 | 
+| Chinese (Traditional) - US Keyboard | 0x00000404 | 
+| Chinese (Traditional, Hong Kong S.A.R.) | 0x00000c04 | 
+| Chinese (Traditional Macao S.A.R.) US Keyboard | 0x00001404 | 
+| Chinese (Simplified, Singapore) - US keyboard | 0x00001004 | 
+| Croatian | 0x0000041a | 
+| Czech | 0x00000405 | 
+| Czech (QWERTY) | 0x00010405 | 
+| Czech Programmers | 0x00020405 | 
+| Danish | 0x00000406 | 
+| Devanagari-INSCRIPT | 0x00000439 | 
+| Divehi Phonetic | 0x00000465 | 
+| Divehi Typewriter | 0x00010465 | 
+| Dutch | 0x00000413 | 
+| Dzongkha | 0x00000C51 | 
+| Estonian | 0x00000425 | 
+| Faeroese | 0x00000438 | 
+| Finnish | 0x0000040b | 
+| Finnish with Sami | 0x0001083b | 
+| French | 0x0000040c | 
+| Futhark | 0x00120c00 | 
+| Georgian | 0x00000437 | 
+| Georgian (Ergonomic) | 0x00020437 | 
+| Georgian (QWERTY) | 0x00010437 | 
+| Georgian Ministry of Education and Science Schools | 0x00030437 | 
+| Georgian (Old Alphabets) | 0x00040437 | 
+| German | 0x00000407 | 
+| German (IBM) | 0x00010407 | 
+| Gothic | 0x000c0c00 | 
+| Greek | 0x00000408 | 
+| Greek (220) | 0x00010408 | 
+| Greek (220) Latin | 0x00030408 | 
+| Greek (319) | 0x00020408 | 
+| Greek (319) Latin | 0x00040408 | 
+| Greek Latin | 0x00050408 | 
+| Greek Polytonic | 0x00060408 | 
+| Greenlandic | 0x0000046f | 
+| Guarani | 0x00000474 | 
+| Gujarati | 0x00000447 | 
+| Hausa | 0x00000468 | 
+| Hebrew | 0x0000040d | 
+| Hindi Traditional | 0x00010439 | 
+| Hungarian | 0x0000040e | 
+| Hungarian 101-key | 0x0001040e | 
+| Icelandic | 0x0000040f | 
+| Igbo | 0x00000470 | 
+| India | 0x000004009 | 
+| Inuktitut - Latin | 0x0000085d | 
+| Inuktitut - Naqittaut | 0x0001045d | 
+| Irish | 0x00001809 | 
+| Italian | 0x00000410 | 
+| Italian (142) | 0x00010410 | 
+| Japanese | 0x00000411 | 
+| Javanese | 0x00110c00 | 
+| Kannada | 0x0000044b | 
+| Kazakh | 0x0000043f | 
+| Khmer | 0x00000453 | 
+| Khmer (NIDA) | 0x00010453 | 
+| Korean | 0x00000412 | 
+| Kyrgyz Cyrillic | 0x00000440 | 
+| Lao | 0x00000454 | 
+| Latin American | 0x0000080a | 
+| Latvian (Standard) | 0x00020426 | 
+| Latvian (Legacy) | 0x00010426 | 
+| Lisu (Basic) | 0x00070c00 | 
+| Lisu (Standard) | 0x00080c00 | 
+| Lithuanian | 0x00010427 | 
+| Lithuanian IBM | 0x00000427 | 
+| Lithuanian Standard | 0x00020427 | 
+| Luxembourgish | 0x0000046e | 
+| Macedonia (FYROM) | 0x0000042f | 
+| Macedonia (FYROM) - Standard | 0x0001042f | 
+| Malayalam | 0x0000044c | 
+| Maltese 47-Key | 0x0000043a | 
+| Maltese 48-key | 0x0001043a | 
+| Maori | 0x00000481 | 
+| Marathi | 0x0000044e | 
+| Mongolian (Mongolian Script - Legacy) | 0x00000850 | 
+| Mongolian (Mongolian Script - Standard) | 0x00020850 | 
+| Mongolian Cyrillic | 0x00000450 | 
+| Myanmar | 0x00010c00 | 
+| N'ko | 0x00090c00 | 
+| Nepali | 0x00000461 | 
+| New Tai Lue | 0x00020c00 | 
+| Norwegian | 0x00000414 | 
+| Norwegian with Sami | 0x0000043b | 
+| Odia | 0x00000448 | 
+| Ol Chiki | 0x000d0c00 | 
+| Old Italic | 0x000f0c00 | 
+| Osmanya | 0x000e0c00 | 
+| Pashto (Afghanistan) | 0x00000463 | 
+| Persian | 0x00000429 | 
+| Persian (Standard) | 0x00050429 | 
+| Phags-pa | 0x000a0c00 | 
+| Polish (214) | 0x00010415 | 
+| Polish (Programmers) | 0x00000415 | 
+| Portuguese | 0x00000816 | 
+| Portuguese (Brazilian ABNT) | 0x00000416 | 
+| Portuguese (Brazilian ABNT2) | 0x00010416 | 
+| Punjabi | 0x00000446 | 
+| Romanian (Legacy) | 0x00000418 | 
+| Romanian (Programmers) | 0x00020418 | 
+| Romanian (Standard) | 0x00010418 | 
+| Russian | 0x00000419 | 
+| Russian - Mnemonic | 0x00020419 | 
+| Russian (Typewriter) | 0x00010419 | 
+| Sakha | 0x00000485 | 
+| Sami Extended Finland-Sweden | 0x0002083b | 
+| Sami Extended Norway | 0x0001043b | 
+| Scottish Gaelic | 0x00011809 | 
+| Serbian (Cyrillic) | 0x00000c1a | 
+| Serbian (Latin) | 0x0000081a | 
+| Sesotho sa Leboa | 0x0000046c | 
+| Setswana | 0x00000432 | 
+| Sinhala | 0x0000045b | 
+| Sinhala - wij 9 | 0x0001045b | 
+| Slovak | 0x0000041b | 
+| Slovak (QWERTY) | 0x0001041b | 
+| Slovenian | 0x00000424 | 
+| Sora | 0x00100c00 | 
+| Sorbian Extended | 0x0001042e | 
+| Sorbian Standard | 0x0002042e | 
+| Sorbian Standard (Legacy) | 0x0000042e | 
+| Spanish | 0x0000040a | 
+| Spanish Variation | 0x0001040a | 
+| Swedish | 0x0000041d | 
+| Swedish with Sami | 0x0000083b | 
+| Swiss French | 0x0000100c | 
+| Swiss German | 0x00000807 | 
+| Syriac | 0x0000045a | 
+| Syriac Phonetic | 0x0001045a | 
+| Tai Le | 0x00030c00 | 
+| Tajik | 0x00000428 | 
+| Tamil | 0x00000449 | 
+| Tatar | 0x00010444 | 
+| Tatar (Legacy) | 0x00000444 | 
+| Telugu | 0x0000044a | 
+| Thai Kedmanee | 0x0000041e | 
+| Thai Kedmanee (non-ShiftLock) | 0x0002041e | 
+| Thai Pattachote | 0x0001041e | 
+| Thai Pattachote (non-ShiftLock) | 0x0003041e | 
+| Tibetan (PRC - Standard) | 0x00010451 | 
+| Tibetan (PRC - Legacy) | 0x00000451 | 
+| Tifinagh (Basic) | 0x00050c00 | 
+| Tifinagh (Full) | 0x00060c00 | 
+| Turkish F | 0x0001041f | 
+| Turkish Q | 0x0000041f | 
+| Turkmen | 0x00000442 | 
+| Uyghur | 0x00010408 | 
+| Uyghur (Legacy) | 0x00000480 | 
+| Ukrainian | 0x00000422 | 
+| Ukrainian (Enhanced) | 0x00020422 | 
+| United Kingdom | 0x00000809| 
+| United Kingdom Extended | 0x00000452 | 
+| United States - Dvorak | 0x00010409 | 
+| United States - International | 0x00020409 | 
+| United States-Dvorak for left hand | 0x00030409 | 
+| United States-Dvorak for right hand | 0x00040409 | 
+| United States - English | 0x00000409 | 
+| Urdu | 0x00000420 | 
+| Uyghur | 0x00010480 | 
+| Uzbek Cyrillic | 0x00000843 | 
+| Vietnamese | 0x0000042a | 
+| Wolof | 0x00000488 | 
+| Yakut | 0x00000485 | 
+| Yoruba | 0x0000046a | 
 
  
 

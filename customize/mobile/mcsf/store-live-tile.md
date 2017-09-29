@@ -15,11 +15,11 @@ ms.technology: windows-oem
 # Store live tile
 
 
-The Store tile, when medium-sized, becomes a live tile. It shows both the Windows Store logo and the name. The Windows Store live tile cycles through apps that the user will see in the Store and lets the user discover apps outside of the Store. By default, the Store live tile is on and out-of-the-box, the live tile is only updated over Wi-Fi until the user enters the Store for the first time. After the user enters the Store, the OS will start using cellular data to update the Store live tile in the background.
+The Store tile, when medium-sized, becomes a live tile. It shows both the Microsoft Store logo and the name. The Microsoft Store live tile cycles through apps that the user will see in the Store and lets the user discover apps outside of the Store. By default, the Store live tile is on and out-of-the-box, the live tile is only updated over Wi-Fi until the user enters the Store for the first time. After the user enters the Store, the OS will start using cellular data to update the Store live tile in the background.
 
 Microsoft recommends that partners keep the default Store live tile behavior. However, partners may change the default behavior to turn off the Store live tile and to prevent the OS from using cellular data to update the Store live tile in the background.
 
-Regardless of the default Store live tile settings, users have the option of changing the defaults by choosing the **Live Tile** settings in the Windows Store **Settings** screen.
+Regardless of the default Store live tile settings, users have the option of changing the defaults by choosing the **Live Tile** settings in the Microsoft Store **Settings** screen.
 
 
 
@@ -50,7 +50,7 @@ Regardless of the default Store live tile settings, users have the option of cha
 
 2.  Specify an `Owner`.
 
-3.  To set the default value for **Live Tile** **Show products on tile** option in the Windows Store **Settings** screen, set `OemMoCustomizedIsLiveTileEnabled` to one of the following values:
+3.  To set the default value for **Live Tile** **Show products on tile** option in the Microsoft Store **Settings** screen, set `OemMoCustomizedIsLiveTileEnabled` to one of the following values:
 
     <table>
     <colgroup>
@@ -78,7 +78,7 @@ Regardless of the default Store live tile settings, users have the option of cha
 
      
 
-4.  To set the default value for **Live Tile** **Only update the tile when I'm on Wi-Fi** option in the Windows Store **Settings** screen, set `OemMoLiveTileOptInToCellularAfterStoreLaunch` to one of the following values:
+4.  To set the default value for **Live Tile** **Only update the tile when I'm on Wi-Fi** option in the Microsoft Store **Settings** screen, set `OemMoLiveTileOptInToCellularAfterStoreLaunch` to one of the following values:
 
     <table>
     <colgroup>
@@ -112,7 +112,7 @@ Regardless of the default Store live tile settings, users have the option of cha
 
 2.  Verify that the Store live tile is medium-sized and pinned to the Start screen.
 
-3.  Go to the **Settings** screen in the Windows Store app, and check the default values for the following **Live Tile** options: **Show products on tile** and **Only update the tile when I'm on Wi-Fi**. Confirm that they match the default values that you set.
+3.  Go to the **Settings** screen in the Microsoft Store app, and check the default values for the following **Live Tile** options: **Show products on tile** and **Only update the tile when I'm on Wi-Fi**. Confirm that they match the default values that you set.
 
  
 

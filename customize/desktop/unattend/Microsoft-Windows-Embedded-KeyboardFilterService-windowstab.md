@@ -1,6 +1,6 @@
 ---
 title: WindowsTab
-description: Blocks the Windows logo key+Tab key combination used to cycle through Windows Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.
+description: Blocks the Windows logo key+Tab key combination used to cycle through Microsoft Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # WindowsTab
 
 
-Blocks the Windows logo key+Tab key combination used to cycle through Windows Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.
+Blocks the Windows logo key+Tab key combination used to cycle through Microsoft Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.
 
 ## Type
 

@@ -1381,7 +1381,6 @@ The following requirements must be met:
 -   It must ship with SHA-256 PCR banks and implement PCRs 0 through 23 for SHA-256. Note that it is acceptable to ship TPMs with a single switchable PCR bank that can be utilized for SHA-256 measurements.
 -   It must support TPM2\_HMAC command.
 
-A UEFI firmware option to turn off the TPM is not required. OEM systems for special purpose commercial systems, custom order, and customer systems with a custom image are not required to ship with a TPM support enabled.
 
 For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet, and for TPM 1.2 and 2.0 version comparisons, see [TPM recommendations](https://technet.microsoft.com/library/mt604232.aspx), also on TechNet.
 

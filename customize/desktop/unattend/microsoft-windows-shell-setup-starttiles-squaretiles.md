@@ -17,13 +17,13 @@ ms.technology: windows-oem
 # SquareTiles
 
 
-`SquareTiles` defines the default Windows Store apps to appear as square tiles on the **Start** screen. The two available `SquareTiles` types are:
+`SquareTiles` defines the default Microsoft Store apps to appear as square tiles on the **Start** screen. The two available `SquareTiles` types are:
 
 -   `SquareOrDesktopTile`. You can include up to 6 of these on your **Start** screen, formatted as `SquareOrDesktopTile` through `DesktopOrSquareTile6`.
 
 -   `SquareTile`. You can include up to 12 of these on your **Start** screen, formatted as `SquareTile1` through `SquareTile12`.
 
-To use either of these tile types with your Windows Store apps, you must include the `AppId`. The `AppId` is the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store. You can also include a `FirstRunTask` setting to specify the background task that should be active, or live, by default for the tile.
+To use either of these tile types with your Microsoft Store apps, you must include the `AppId`. The `AppId` is the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Microsoft Store. You can also include a `FirstRunTask` setting to specify the background task that should be active, or live, by default for the tile.
 
 If you skip a setting, Windows appears rearrange the flow of your app tiles around the position of that setting on the **Start** screen. The flow rearrangement is based on columns and is designed to eliminate gaps. This position may vary based on the screen size, resolution, and DPI. For more information about these settings, see the associated [StartTiles](microsoft-windows-shell-setup-starttiles.md) settings topics.
 

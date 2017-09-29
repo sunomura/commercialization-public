@@ -16,106 +16,72 @@ ms.technology: windows-oem
 
 
 A desktop PC form factor traditionally comes in an upright tower or small desktop chassis. Listed below are a few recommended hardware configurations.
+
 <table>
 <tbody valign="top">
-<tr>
-<td colspan="2"/>
-<td>
-<p>
-![windows desktop](../images/desktop.png)
-</p>
-<p>
-Mainstream Desktop
-</p>
+<tr style="vertical-align:bottom;">
+<td style="width: 20%;">&nbsp;</td>
+<td style="width: 20%;">
+<p>![windows desktop](../images/desktop.png)</p>
 </td>
-<td>
-<p>
-![mini pc desktop](../images/desktop-minipc.png)
-</p>
-<p>
-Mini PC Desktop
-</p>
+<td><p><br/><!--Here to add white space--><br/></p>
+<p>![mini pc desktop](../images/desktop-minipc-quarter-size.png)</p>
 </td>
 </tr>
 <tr>
-<td colspan="2">
-Key Features
-</td>
-<td>
-Full PC Experience (Core performance, legacy ports, optical disk drive )
-</td>
-<td>
-Full PC Experience (Core performance with optimal storage)
+<td bgcolor="EEEEEE"><p>Type</p></td>
+<td><p>Mainstream desktop</p></td>
+<td><p>Mini PC desktop</p></td>
+</tr>
+<tr>
+<td bgcolor="EEEEEE"><p>Key Features</p></td>
+<td><p>Full PC experience<br/>(Core performance, legacy ports, optical disk drive)</p></td>
+<td><p>Full PC experience<br/>(Core performance with optimal storage)</p></td>
+</tr>
+<tr>
+<td bgcolor="EEEEEE">Operating System</td>
+<td colspan="2">Windows&nbsp;10 for desktop editions (Home, Pro, Enterprise, and Education)</td>
+</tr>
+<tr>
+<td bgcolor="EEEEEE" colspan="3"><p style="margin: .75em 0 .75em 0;">Recommended components</p>
 </td>
 </tr>
 <tr>
-<td colspan="2">
-Operating System
-</td>
-<td>
-Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
-</td>
-<td>
-Windows 10 for desktop editions
-</td>
+<td bgcolor="EEEEEE"><p>CPU</p></td>
+<td><p>Mid-range x86</p></td>
+<td><p>Mid-range x86</p></td>
 </tr>
 <tr>
-<td rowspan="5">
-[Recommended Components](../component-guidelines/components.md)
-</td>
-<td>
-CPU
-</td>
-<td>
-Mid-range x86
-</td>
-<td>
-Mid-range x86
-</td>
+<td bgcolor="EEEEEE"><p>RAM/Storage</p></td>
+<td><p>4&nbsp;GB+&nbsp;/ 32&nbsp;GB+&nbsp;SSD or 500&nbsp;GB+&nbsp;HDD</p></td>
+<td><p>4&nbsp;GB&nbsp;/ 32+&nbsp;GB&nbsp;SSD or 320&nbsp;GB+&nbsp;HDD</p></td>
 </tr>
 <tr>
-<td>
-RAM/Storage
-</td>
-<td>
-4GB+ / 32GB+ SSD or 500GB+ HDD
-</td>
-<td>
-4GB / 32+ GB SSD or 320GB+ HDD
-</td>
+<td bgcolor="EEEEEE"><p>Display</p></td>
+<td><p>Multi-monitor support</p></td>
+<td><p>-</p></td>
 </tr>
 <tr>
-<td>
-Display
-</td>
-<td>
-Multi-Monitor Support
-</td>
-<td>
--
-</td>
+<td bgcolor="EEEEEE"><p>Dimensions</p></td>
+<td>-</td>
+<td><p>&lt;&nbsp;2.5&nbsp;L compact size</p></td>
 </tr>
 <tr>
+<td bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">Connectivity</p></td>
 <td>
-Dimensions
+<p style="margin: .75em 0 .75em 0;">802.11ac</p>
+<p style="margin: .75em 0 .75em 0;">USB&nbsp;3.0</p>
+<p style="margin: .75em 0 .75em 0;">HDMI</p>
+<p style="margin: .75em 0 .75em 0;">BT</p>
 </td>
 <td>
--
-</td>
-<td>
-&lt;2.5L compact size
-</td>
-</tr>
-<tr>
-<td>
-Connectivity
-</td>
-<td>
-802.11ac, USB 3.0, HDMI, BT
-</td>
-<td>
-802.11ac, USB 3.0, HDMI, BT LE
-</td>
+<p style="margin: .75em 0 .75em 0;">802.11ac</p>
+<p style="margin: .75em 0 .75em 0;">USB&nbsp;3.0</p>
+<p style="margin: .75em 0 .75em 0;">HDMI</p>
+<p style="margin: .75em 0 .75em 0;">BT&nbsp;LE</p></td>
 </tr>
 </tbody>
 </table>
+
+
+For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).

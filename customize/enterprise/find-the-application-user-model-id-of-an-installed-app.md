@@ -1,6 +1,6 @@
 ---
 title: Find the Application User Model ID of an installed app
-description: In order to use assigned access with Mobile Device Management (MDM), you must know the Application User Model ID (AUMID) of Windows Store apps installed on a device. You can find the AUMID by either using Windows PowerShell or querying the registry.
+description: In order to use assigned access with Mobile Device Management (MDM), you must know the Application User Model ID (AUMID) of Microsoft Store apps installed on a device. You can find the AUMID by either using Windows PowerShell or querying the registry.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,12 +15,12 @@ ms.technology: windows-oem
 # Find the Application User Model ID of an installed app
 
 
-In order to use assigned access with Mobile Device Management (MDM), you must know the Application User Model ID (AUMID) of Windows Store apps installed on a device. You can find the AUMID by either using Windows PowerShell or querying the registry.
+In order to use assigned access with Mobile Device Management (MDM), you must know the Application User Model ID (AUMID) of Microsoft Store apps installed on a device. You can find the AUMID by either using Windows PowerShell or querying the registry.
 
 ## To identify the AUMID of an installed app by using Windows PowerShell
 
 
-At a Windows PowerShell command prompt, type the following commands to list the AUMIDs for all Windows Store apps installed for the current user on your device:
+At a Windows PowerShell command prompt, type the following commands to list the AUMIDs for all Microsoft Store apps installed for the current user on your device:
 
 ```
 $installedapps = get-AppxPackage
@@ -42,7 +42,7 @@ You can add the –user &lt;username&gt; or the –allusers parameters to the ge
 ## To identify the AUMID of an installed app for the current user by using the registry
 
 
-Querying the registry can only return information about Windows Store apps that are installed for the current user, while the Windows PowerShell query can find information for any account on the device.
+Querying the registry can only return information about Microsoft Store apps that are installed for the current user, while the Windows PowerShell query can find information for any account on the device.
 
 At a command prompt, type the following command:
 

@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # AppId
 
 
-`AppId` specifies the application whose monochrome icon appears on the **Lock** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store.
+`AppId` specifies the application whose monochrome icon appears on the **Lock** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Microsoft Store.
 
 If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).
 

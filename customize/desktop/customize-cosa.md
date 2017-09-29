@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.author: alhopper
-ms.date: 05/02/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,21 +19,31 @@ In Windows 10, version 1703, we added the Country and Operator Settings Asset (C
 > [!Note]  
 > This feature is only supported in Windows 10, version 1703 for desktop editions (Home, Pro, Enterprise, and Education)
 
+COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to introduce new COSA profiles to the database, as well as replace or extend existing COSA profiles. For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace, by creating an answer file that contains the settings. You can also change or remove an existing profile using the `Replace` operator in the existing answer file.
+
+> [!Important]
+> When using `Replace` to change or remove a profile, there are certain settings, listed below, which should not be modified or removed by OEMs. These settings are either system specific, or contractual settings between Microsoft and Mobile Operators (MOs), and their values should be preserved.
+> 
+> * Support DataMarketplace
+> * DataMarketplace Roaming UI Enabled
+> * Account Experience URL
+> * Branding Name
+> * Branding Icon Name
+> * Use Branding Name on Roaming
+
 > [!Important]  
 > Microsoft is collecting the following telemetry data related to the COSA:
-> - AfterMarketProfile – Published when an OEM package adds a new profile.  Data includes the profile ID (typically a GUID) as well as the targeting info for the profile (such as MCC, MNC, SPN, and so on).
-> - ProfileReplaced – Published when the OEM package replaces a COSA profile.  Data is the profile ID.
-> - ProfileSuppressedByAfterMarketProfile – Published when an OEM package contains a profile that matches when a COSA profile also matches.  The telemetry data contains the Profile ID.
+> - AfterMarketProfile – Published when an OEM package adds a new profile. Data includes the profile ID (typically a GUID) as well as the targeting info for the profile (such as MCC, MNC, SPN, and so on).
+> - ProfileReplaced – Published when the OEM package replaces a COSA profile. Data is the profile ID.
+> - ProfileSuppressedByAfterMarketProfile – Published when an OEM package contains a profile that matches when a COSA profile also matches. The telemetry data contains the Profile ID.
 
-COSA can be extended with OEM-generated provisioning packages during desktop imaging. This enables OEMs to replace or extend existing COSA profiles, as well as introduce new ones.  For example, you can add a profile for a mobile virtual network operator (MVNO) not currently in COSA, or a new partner for Data Marketplace. You can also replace or disable an existing profile.  
-
-It is recommended that your organization submit any MO profile changes made to extend COSA to Microsoft. To learn more, see [APN database submission](https://msdn.microsoft.com/en-us/windows/hardware/drivers/mobilebroadband/apn-database-submission).
+We recommend MOs and organizations submit any profile changes made to extend COSA to Microsoft. To learn more, see [COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/apn-database-submission).
 
 ## To add a new profile
 
 You can add a new profile that is not yet included in the COSA database using the following steps.
 
-1. Create an answer file or edit an existing answer file that contains the new profiles. Here is an example:
+1. Create an answer file or edit an existing answer file that contains the new profile settings. Here is an example:
 
   ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -126,15 +136,23 @@ You can add a new profile that is not yet included in the COSA database using th
   </WindowsCustomizations>
   ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx#to_build_a_provisioning_package).
+2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
 3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
 4. Perform necessary tests for validation.  
 
-## To replace an existing profile  
+For a full list of COSA settings, please see [Planning your COSA/APN database submission](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission#complete-the-apncosa-update-spreadsheet).
 
-1. Create an answer file or edit an existing answer file that contains the profiles using the Replace operator. Here is an example:
+## To change an existing profile 
+
+Use the `Replace` operator to make changes to an existing profile. 
+
+1. Navigate to the provisioning package (PPKG) where the COSA database is stored. It should be in the following location: %WINDIR%\Provisioning\COSA\Microsoft.
+
+2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
+
+3. Edit the answer file to use the `Replace` operator, and only make changes to settings that require modification. Leave all other settings as they are.
 
   ```
   <Replace Name="MobileCarrier1 (Replaced)">
@@ -170,7 +188,7 @@ You can add a new profile that is not yet included in the COSA database using th
             <Cellular>
               <PerSimSettings>
                <SettingsForSim SimIccid="$(__ICCID)">
-                 <AccountExperienceURL>https://some_URL_here>
+                 <AccountExperienceURL>https://some_URL_here</AccountExperience>
                  <AppID>
                   AppID_here
                  </AppID>
@@ -181,18 +199,25 @@ You can add a new profile that is not yet included in the COSA database using th
         </Replace>
    ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx#to_build_a_provisioning_package).
+   > [!Note]  
+   > The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
 
-3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+4. Create a provisioning package that includes the modified answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-4. Perform necessary tests for validation.  
+5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-> [!Note]  
-> The TargetRef ID used by the Replace operator should be the profile GUID used by COSA.
+6. Perform necessary tests for validation.  
+
 
 ## To remove an existing profile  
 
-1. Create an answer file or edit an existing answer file that contains the profiles using the Replace operator. Here is an example:  
+Use the `Replace` operator to remove an existing profile. The settings included in a `Replace` element are applied instead of the original COSA settings. If no settings are specified, the operation becomes a Removal.
+
+1. Navigate to the provisioning package (PPKG) where the COSA database is stored. It should be in the following location: %WINDIR%\Provisioning\COSA\Microsoft.
+
+2. Unzip the package and open the answer file. You can use a third-party tool, such as 7-Zip File Manager ([www.7-Zip.org](http://www.7-zip.org/)), to inspect and unzip the package.
+
+3. Edit the answer file to use the `Replace`operator. Delete any settings you wish to remove from the COSA database. Here is an example:  
 
   ```
         <Replace Name="MobileCarrier2 (Removed)">
@@ -202,11 +227,8 @@ You can add a new profile that is not yet included in the COSA database using th
         </Replace>
   ```
 
-2. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916115(v=vs.85).aspx#to_build_a_provisioning_package).
+4. Create a provisioning package that includes the answer file. For more information, see [To build a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-command-line#to_build_a_provisioning_package).
 
-3. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
+5. Place your provisioning packages (PPKG) in the following location: %WINDIR%\Provisioning\COSA\OEM.
 
-4. Perform necessary tests for validation.  
-
-> [!Note]
-> The settings included in a Replace element are applied instead of the original COSA settings.  If no settings are specified, the operation becomes a Removal.
+6. Perform necessary tests for validation.  

@@ -35,7 +35,7 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 1f: Build a retail image](build-retail-image.md)
 -   [Lab 2: Creating your own board support package](create-a-new-bsp.md)
--   [Lab 3: Update your apps](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps)
+-   [Lab 3: Update your apps](../../service/iot/updating-iot-core-apps.md)
 
 
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
@@ -62,7 +62,7 @@ Each package contains:
 
 The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, and `createprovpkg`, which call pkggen to create packages for our drivers, apps, and settings.
 
-The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://msdn.microsoft.com/library/windows/hardware/dn756642).
+The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](../mobile/creating-mobile-packages.md).
 
 ### <span id="Feature_manifests__FMs_"></span><span id="feature_manifests__fms_"></span><span id="FEATURE_MANIFESTS__FMS_"></span>Feature manifests (FMs)
 
@@ -73,7 +73,7 @@ You can use as many FMs into an image as you want. In this guide, we refer to th
 -   **OEMFM.xml** includes features an OEM might add to a device, such as the app and a provisioning package.
 -   **BSPFM.xml** includes features that a hardware manufacturer might use to define a board. For example, OEM\_RPi2FM.xml includes all of the features used for the Raspberry Pi 2.
 
-The process is similar to that used by Windows 10 Mobile. To learn more, see [Feature manifest file contents](https://msdn.microsoft.com/library/windows/hardware/dn756745).
+The process is similar to that used by Windows 10 Mobile. To learn more, see [Feature manifest file contents](../mobile/feature-manifest-file-contents.md).
 
 You'll list which of the features to add by using these tags:
 
@@ -87,7 +87,7 @@ The Feature Merger tool generates the required feature identifier packages that 
 
 To create the final image, you'll use the `imggen` tool with an image configuration file, **OEMInput.xml file**.
 
-These are the same tools used to create Windows 10 Mobile images. To learn more, see [OEMInput file contents](https://msdn.microsoft.com/library/windows/hardware/dn756778).
+These are the same tools used to create Windows 10 Mobile images. To learn more, see [OEMInput file contents](../mobile/oeminput-file-contents.md).
 
 The image configuration file lists:
 

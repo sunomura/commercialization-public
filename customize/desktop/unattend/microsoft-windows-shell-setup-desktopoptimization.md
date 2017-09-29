@@ -34,7 +34,7 @@ ms.technology: windows-oem
 </tr>
 <tr class="even">
 <td><p>[ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setup-desktopoptimization-showwindowsstoreappsontaskbar.md)</p></td>
-<td><p>Specifies to show Windows Store apps on the taskbar.</p></td>
+<td><p>Specifies to show Microsoft Store apps on the taskbar.</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output specifies to go to the desktop on sign in and to show Windows Store apps on the taskbar.
+The following XML output specifies to go to the desktop on sign in and to show Microsoft Store apps on the taskbar.
 
 ```
           <DesktopOptimization>

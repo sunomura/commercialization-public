@@ -44,7 +44,7 @@ Describes the customizations for the browser.
 </tr>
 <tr class="odd">
 <td><p>[WAP browser support](wap-browser-support.md)</p></td>
-<td><p>For phones that will ship in China and India, OEMs can add one preloaded WAP browser to the phone, which will automatically be launched when the user tries to open a WAP link. The WAP browser must be written as an application, and must go through the standard Windows Store submission process.</p></td>
+<td><p>For phones that will ship in China and India, OEMs can add one preloaded WAP browser to the phone, which will automatically be launched when the user tries to open a WAP link. The WAP browser must be written as an application, and must go through the standard Microsoft Store submission process.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Welcome home page for Microsoft Edge](welcome-home-page-for-internet-explorer.md)</p></td>

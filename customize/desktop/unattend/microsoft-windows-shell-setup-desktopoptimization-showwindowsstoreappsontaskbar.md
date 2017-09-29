@@ -30,11 +30,11 @@ ms.technology: windows-oem
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies to show Windows Store apps on the taskbar.</p></td>
+<td><p>Specifies to show Microsoft Store apps on the taskbar.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies to not show Windows Store apps on the taskbar.</p></td>
+<td><p>Specifies to not show Microsoft Store apps on the taskbar.</p></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +73,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output specifies to go to the desktop on sign in and to show Windows Store apps on the taskbar.
+The following XML output specifies to go to the desktop on sign in and to show Microsoft Store apps on the taskbar.
 
 ```
 <DesktopOptimization>

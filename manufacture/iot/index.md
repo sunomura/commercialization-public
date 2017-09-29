@@ -18,7 +18,7 @@ Windows 10 IoT Core (IoT Core) is a version of Windows 10 that is optimized fo
 
 OEMs can manufacture and deploy IoT Core using existing or custom-built hardware. To see existing recommended hardware, see [device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions) and the [Hardware Compatibility List](http://go.microsoft.com/fwlink/?LinkID=532948).
 
-When developing your own board, see the [Minimum hardware requirements for IoT Core](https://msdn.microsoft.com/library/windows/hardware/dn915086#iotcore).
+When developing your own board, see the [Minimum hardware requirements for IoT Core](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview#iotcore).
 
 ## <span id="in_this_section"></span>In this section
 

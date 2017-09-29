@@ -15,7 +15,7 @@ When modifying an IoT Core board support package (BSP), you can change the drive
 
 ## Partition layout
 
-IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535.aspx).  
+IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](..\desktop\windows-and-gpt-faq.md).  
 
 Sample partition layouts included in the ADK Add-Ons:
 -  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB\devicelayout.xml
@@ -133,7 +133,8 @@ The following diagrams provide an overview of two configurations.
 ### Device platform layout (OEMDevicePlatform.xml)
 
 OEMDevicePlatform.xml specifies the amount of free blocks available in the device and which partitions are compressed. Example:
-   ```
+
+``` xml
    <?xml version="1.0" encoding="utf-8"?>
    <OEMDevicePlatform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
       <MinSectorCount>7372800</MinSectorCount>
@@ -144,7 +145,7 @@ OEMDevicePlatform.xml specifies the amount of free blocks available in the devic
        <Name>MainOS</Name>
      </CompressedPartitions>
    </OEMDevicePlatform>
-   ```
+```
 
 ## BSP Samples in IoT-ADK-AddonKit
 
@@ -177,5 +178,5 @@ CustomMBM is a customized version of the Intel MinnowBoard Max Board BSP, where 
 
 [Creating your own board support package (BSP)](create-a-new-bsp.md)
 
-[Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) 
-[Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535.aspx).  
+[Boot and UEFI](https://docs.microsoft.com/windows-hardware/drivers/bringup/boot-and-uefi) 
+[Windows and GPT FAQ](../desktop/windows-and-gpt-faq.md).  

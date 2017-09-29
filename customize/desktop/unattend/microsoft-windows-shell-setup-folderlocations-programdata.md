@@ -22,11 +22,9 @@ ms.technology: windows-oem
 **Warning**  
 We don’t recommend using this setting, except perhaps in a test environment. The following are known issues:
 
--   The Windows Store and Windows Store apps are not supported.
+-   Microsoft Store apps are not supported.
 
 -   If you change the default location of the program-data folders to a volume other than the system volume, you cannot service your image. Any updates, fixes, or service packs may not be applied to the installation.
-
- 
 
 The path can be on a volume other than the system drive, as long as it meets the following requirements:
 

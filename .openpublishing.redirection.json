@@ -1124,6 +1124,11 @@
         "source_path": "customize/enterprise/set-assignedaccess.md", 
         "redirect_url": "https://technet.microsoft.com/itpro/powershell/windows/assignedaccess/set-assignedaccess", 
         "redirect_document_id": true 
+    },
+    {   
+        "source_path": "design/minimum/device-guard-and-credential-guard.md", 
+        "redirect_url": "https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-security-considerations", 
+        "redirect_document_id": true
     }
   ] 
 }

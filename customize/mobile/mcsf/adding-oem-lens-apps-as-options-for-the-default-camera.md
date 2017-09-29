@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 OEMs can add lens apps as options for the default camera.
 
-OEMs can add lens apps to be shown in the **Pressing the camera button opens** screen within the camera's settings CPL. We recommend that OEMs install only up to five (5) lens apps. The lens apps can be preloaded or installed from the Windows Store. When the lens apps are installed on the phone, the apps become available for the user to set as the default camera.
+OEMs can add lens apps to be shown in the **Pressing the camera button opens** screen within the camera's settings CPL. We recommend that OEMs install only up to five (5) lens apps. The lens apps can be preloaded or installed from the Microsoft Store. When the lens apps are installed on the phone, the apps become available for the user to set as the default camera.
 
 For more information about writing lens apps, see the Windows SDK documentation.
 

@@ -1,6 +1,6 @@
 ---
 title: WindowsPageUp
-description: Blocks the Windows logo key+Page Up key combination used to move a Windows Store app to the left monitor.
+description: Blocks the Windows logo key+Page Up key combination used to move a Microsoft Store app to the left monitor.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # WindowsPageUp
 
 
-Blocks the Windows logo key+Page Up key combination used to move a Windows Store app to the left monitor.
+Blocks the Windows logo key+Page Up key combination used to move a Microsoft Store app to the left monitor.
 
 ## Type
 

@@ -32,7 +32,7 @@ If the region of the current user account is among those in the Start Tile regio
 <tbody>
 <tr class="odd">
 <td><p>[AppId](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles-widetile3-appid.md)</p></td>
-<td><p>Specifies the Windows Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
+<td><p>Specifies the Microsoft Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
 <td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles-widetile3-firstruntask.md)</p></td>

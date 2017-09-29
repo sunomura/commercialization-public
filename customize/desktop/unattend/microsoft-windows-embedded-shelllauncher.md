@@ -24,7 +24,7 @@ You can use shell launcher to replace the default OS shell with a custom shell. 
 
     You can also configure shell launcher to launch different shell applications for different users or user groups.
 
--   You cannot use shell launcher to launch a Windows Store app as a custom shell. However, you can use the application launcher to launch a Windows Store app at startup.
+-   You cannot use shell launcher to launch a Microsoft Store app as a custom shell. However, you can use the application launcher to launch a Microsoft Store app at startup.
 
  
 

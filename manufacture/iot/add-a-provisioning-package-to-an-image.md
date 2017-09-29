@@ -5,7 +5,7 @@ ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1d: Add networking and other provisioning package settings to an image'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -18,7 +18,6 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in.
 
 For this lab, we'll use the ProductB, that includes the default app (Bertha), which shows network status.
-
 
 ## Prerequisites
 
@@ -50,11 +49,12 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     5.  Optional: to add more than one WLAN network, go back to WLANSetting, and repeat the process.
 
-7.  Optional: add other apps, drivers, and settings through the UI. To learn more, see [Configure customizations using Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916109).
+7.  Optional: add other apps, drivers, and settings through the UI. To learn more, see [Configure customizations using Windows ICD](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#configure-settings).
 
-8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916110). )
+8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package#build-package). )
 
-    <blockquote><p><strong>Important:</strong><br> When you make any changes to a provisioning package, Windows Configuration Designer increments the version number in the provisioning file (customizations.xml). The version number is not major.minor, it is a number with a decimal point. For example, 1.19 is a lower version than 1.2. </p></blockquote>
+    >[!IMPORTANT]
+    >When you make any changes to a provisioning package, Windows Configuration Designer increments the version number in the provisioning file (customizations.xml). The version number is not major.minor, it is a number with a decimal point. For example, 1.19 is a lower version than 1.2.
 
 9.  At the **All done!** page, click the link to the **Output location**.
 
@@ -62,7 +62,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 1.  Copy customizations.xml to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\.
         	
-2.  Optional: update customizations.xml with any desired changes. Make sure you increment the version number if you make changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
+2.  Optional: update customizations.xml with any desired changes. Make sure you increment the version number if you make changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn898375) for more info.
 
 **Add the auto-provisioning scripts to the feature manifest and product configuration file**
 
@@ -70,7 +70,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 
-    ```
+    ``` xml
     <?xml version="1.0" encoding="utf-8"?>
       <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
         Owner="$(OEMNAME)"
@@ -96,7 +96,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
 2.  Make sure that the package definition file **%OEM\_NAME%.Provisioning.Auto.cab"** and the feature ID: **OEM\_ProvAuto** are referenced in the common feature manifest, C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
 
-    ```
+    ``` xml
     <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
       <FeatureIDs>
         <FeatureID>OEM_ProvAuto</FeatureID>
@@ -109,7 +109,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     1.  Make sure the common feature manifest: OEMCommonFM.xml is included. (Remove comment marks if necessary.)
 
-        ```
+        ``` xml
         <AdditionalFMs>
          <!-- Including BSP feature manifest -->
          <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -123,7 +123,7 @@ For this lab, we'll use the ProductB, that includes the default app (Bertha), wh
 
     2.  Make sure the Feature: OEM_ProvAuto is included.
 
-        ```
+        ``` xml
         <OEM>
           <!-- Include BSP Features -->
           <Feature>RPI2_DRIVERS</Feature>

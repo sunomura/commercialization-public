@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # WAP browser support
 
 
-For phones that will ship in China and India, OEMs can add one preloaded WAP browser to the phone, which will automatically be launched when the user tries to open a WAP link. The WAP browser must be written as an application, and must go through the standard Windows Store submission process.
+For phones that will ship in China and India, OEMs can add one preloaded WAP browser to the phone, which will automatically be launched when the user tries to open a WAP link. The WAP browser must be written as an application, and must go through the standard Microsoft Store submission process.
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 
@@ -87,7 +87,7 @@ For phones that will ship in China and India, OEMs can add one preloaded WAP bro
 
         For more information about file and URI associations, see the Windows 10 SDK documentation.
 
-2.  After you have created the WAP browser application and gone through the Windows Store submission process to obtain your application license, follow these steps to preload the WAP browser application to the phone.
+2.  After you have created the WAP browser application and gone through the Microsoft Store submission process to obtain your application license, follow these steps to preload the WAP browser application to the phone.
 
     1.  Create a customization answer file using the contents shown in the following code sample.
 

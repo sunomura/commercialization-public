@@ -23,7 +23,7 @@ WPR requires Windows 7 or later version operating system.
 
 **Syntax:**
 
-**wpr** {**-profiles** \[*\<path\>*\] | **-start** *\<arguments\>* | **-stop** *\<arguments\>* | **-cancel** | **-status** *\<keywords\>* | **-profiledetails** *\<arguments\>* | **-providers** | **-disablepagingexecutive** {**on** | **off**} | **-log** {**enabled** | **disabled** | **remove**} | **-purgecache** | **-help** \[*\<keyword\>*\]}
+**wpr** {**-profiles** \[*\<path\>* \[ …\]\] | **-start** *\<arguments\>* | **-stop** *\<arguments\>* | **-cancel** | **-status** *\<arguments\>* | **-profiledetails** | **-providers** | **-disablepagingexecutive** | **-log** *\<argument\>* | **-purgecache** | **-help** *\<arguments\>*}
 
 > [!NOTE]
 > If you start WPR from the command line while another application is recording (such as Xperf or an application that uses NT Kernel Logger, such as logman or PerfTrace), WPR fails to start recording and returns the following error:
@@ -102,9 +102,9 @@ Use this option to display status information about the current WPR recording.
 
 **Syntax:**
 
-**wpr** **-status** \[**profiles**\] \[**collectors** \[**-details**\]\]
+**wpr** **-status** \[*profiles*\] \[*collectors* \[*details*\]\]
 
-If no recording is currently active, a message displays that WPR is not recording. If a recording is currently active and no keywords are used, the following status information displays:
+If no recording is currently active, a message displays that WPR is not recording. If a recording is currently active and no arguments are used, the following status information displays:
 
 ```
 WPR recording is in progress...
@@ -116,28 +116,27 @@ Dropped event           : 0
 Logging mode            : Memory
 ```
 
-If you supply keywords together with the **–status** option, the information listed above displays together with data that is specific to that keyword. The following table describes the available keywords that you can apply to this option.
+If you supply arguments together with the **–status** option, the information listed above displays together with data that is specific to that option. The following table describes the available arguments that you can apply to this option.
 
 <table>
 <thead valign="bottom">
 <tr class="header">
-<th>Keyword</th>
+<th>Argument</th>
 <th>Description and Example Output</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="odd">
-<td><strong>profiles</strong></td>
-<td>Lists each profile that is being used in the current WPR recording.
+<td><em>profiles</em></td>
+<td>This argument lists each profile that is being used in the current WPR recording.
 <p><strong>Example:</strong></p>
 <pre class="syntax" space="preserve">Recording system activity using the following set of profiles:
 
 Profile                 : CPU.Verbose.Memory</pre></td>
 </tr>
 <tr class="even">
-<td><strong>collectors</strong> [<strong>-details</strong>]</td>
+<td><em>collectors</em></td>
 <td>Lists collector information. If buffers have been lost, those buffers are listed.
-<p>If specified, the <strong>-details</strong> switch lists additional information about each collector.</p>
 <p><strong>Example:</strong></p>
 <pre class="syntax" space="preserve">Actively recording collectors:
 
@@ -160,6 +159,10 @@ Providers
         Microsoft-Windows-Win32k: 0x1000000402000: 0xff : Stack
 CaptureState Providers on Save
         Microsoft-Windows-Win32k: 0x80000: 0xff</pre></td>
+</tr>
+<tr class="odd">
+<td><em>details</em></td>
+<td>Lists additional information about each collector.</td>
 </tr>
 </tbody>
 </table>
@@ -243,18 +246,18 @@ Use this option to display on-line help in the Command Prompt window.
 
 The following table describes the available keywords that you can apply to this option.
 
-| Keyword                    | Description                                                                                                                            |
-|:---------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| **cancel**                 | Describes the **–cancel** command-line option. For more information, see [Cancel](#cancel).                                            |
-| **disablepagingexecutive** | Describes the **–disablepagingexecutive** command-line option. For more information, see [Disablepagingexecutive](#disablepagingexec). |
-| **log**                    | Describes **-log** command-line option. For more information, see [Log](#log).                                                         |
-| **profiledetails**         | Describes the **–profiledetails** command-line option. For more information, see [Profiledetails](#prodet).                            |
-| **profiles**               | Describes **-profiles** command-line option. For more information, see [Profiles](#profiles).                                          |
-| **providers**              | Describes the **-providers** command-line option. For more information, see [Providers](#providers).                                   |
-| **purgecache**             | Describes the **–purgecache** command-line option. For more information, see [Purgecache](#purge).                                     |
-| **start**                  | Presents descriptions of **-start** command-line option. For more information, see [Start](#start).                                    |
-| **status**                 | Presents descriptions of **-status** command-line option. For more information, see [Status](#status).                                 |
-| **stop**                   | Describes **-stop** command-line option. For more information, see [Stop](#stop).                                                      |
+| Keyword                    | Description                                                                                                                              |
+|:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+| **cancel**                 | Describes the **–cancel** command-line argument. For more information, see [Cancel](#cancel).                                            |
+| **disablepagingexecutive** | Describes the **–disablepagingexecutive** command-line argument. For more information, see [Disablepagingexecutive](#disablepagingexec). |
+| **log**                    | Describes **-log** command-line arguments. For more information, see [Log](#log).                                                        |
+| **profiledetails**         | Describes the **–profiledetails** command-line argument. For more information, see [Profiledetails](#prodet).                            |
+| **profiles**               | Describes **-profiles** command-line arguments. For more information, see [Profiles](#profiles).                                         |
+| **providers**              | Describes the **-providers** command-line argument. For more information, see [Providers](#providers).                                   |
+| **purgecache**             | Describes the **–purgecache** command-line argument. For more information, see [Purgecache](#purge).                                     |
+| **start**                  | Presents descriptions of **-start** command-line arguments. For more information, see [Start](#start).                                   |
+| **status**                 | Presents descriptions of **-status** command-line arguments. For more information, see [Status](#status).                                |
+| **stop**                   | Describes **-stop** command-line arguments. For more information, see [Stop](#stop).                                                     |
 
 
 ## <a href="" id="rem"></a>Remarks

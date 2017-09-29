@@ -30,7 +30,7 @@ ms.technology: windows-oem
 <tbody>
 <tr class="odd">
 <td><p>[AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile1-appidorpath.md)</p></td>
-<td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen.</p></td>
+<td><p>Specifies the <code>AppID</code> of the Microsoft Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
 <td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile4-firstruntask.md)</p></td>

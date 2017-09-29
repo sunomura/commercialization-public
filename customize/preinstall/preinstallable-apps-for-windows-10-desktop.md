@@ -18,7 +18,7 @@ ms.technology: windows-oem
 ## To add a preinstalled app to a desktop image
 
 
-You will need to use the Windows Assessment and Deployment Kit (ADK) to pre-install Windows Store apps in your desktop images. [Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526740).
+You will need to use the Windows Assessment and Deployment Kit (ADK) to pre-install Microsoft Store apps in your desktop images. [Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526740).
 
 ## Request a preinstallation package
 

@@ -403,7 +403,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>To meet China Type Approval (CTA) requirements for devices shipping in China, OEMs must show a notification dialog to alert users when the app being downloaded does certain things.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Store settings: Windows Store for China](windows-phone-store-for-china.md)</p></td>
+<td><p>[Store settings: Microsoft Store for China](windows-phone-store-for-china.md)</p></td>
 <td><p>For a Windows 10 Mobile device shipping in China, OEMs must specify that the device is intended for that market by setting the <strong>PhoneROMLanguage</strong> setting in <strong>DeviceTargetingInfo</strong> to the appropriate locale ID.</p></td>
 </tr>
 <tr class="odd">

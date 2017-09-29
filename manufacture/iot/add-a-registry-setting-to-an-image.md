@@ -5,7 +5,7 @@ ms.assetid: 7ca2b835-4d36-43d9-b46f-d5d5d8410335
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1c: Add a file and a registry setting to an image'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -31,7 +31,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
 
-1.  Run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
+1.  Open the IoT Core Shell: run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create a working folder for the registry key and test files, for example:
 
@@ -55,7 +55,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
     
     Variables like $(runtime.root) are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
 
-    ```
+    ``` xml
       <OSComponent> 
          <RegKeys> 
              <RegKey KeyName="$(hklm.software)\$(OEMNAME)\Test">
@@ -91,7 +91,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_FilesAndRegKeys".
 
-    ```
+    ``` xml
     <Features>
       <OEM>
         <!-- Feature definitions below -->
@@ -120,7 +120,7 @@ You'll now be able to add your files and registry keys to any of your products b
 
     Make sure the feature manifest: **OEMCommonFM.xml** is included, removing comment marks if necessary.
 
-    ```
+    ``` xml
     <AdditionalFMs>
        <!-- Including BSP feature manifest -->
        <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -140,7 +140,7 @@ You'll now be able to add your files and registry keys to any of your products b
 
     c. Add the FeatureID for your registry package, example: OEM_FilesAndRegKeys.
     
-    ```
+    ``` xml
     <Features>
       <Microsoft>
     
@@ -201,7 +201,7 @@ After a short while, you should see the [IoT test (Bertha) app](https://develope
 
 ## <span id="See_your_regkeys"></span>See if your registry keys exist
 
-1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://developer.microsoft.com/en-us/windows/iot/docs/ssh).)
+1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://developer.microsoft.com/windows/iot/docs/ssh).)
 
 2.  From the command line in the SSH client, query the system for the registry key.
 

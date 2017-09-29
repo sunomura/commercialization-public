@@ -14,124 +14,81 @@ ms.technology: windows-oem
 # Sysprep (Generalize) a Windows installation
 
 
-Use **Sysprep** to generalize a Windows installation. To deploy a Windows image to different PCs, you must first prepare the image. You can either use the System Preparation (Sysprep) tool or you can specify a setting in an answer file to prepare the image as part of an unattended installation. To prepare the image, you must remove the computer-specific information from the image. This process is called *generalizing* the image.
+To deploy a Windows image to different PCs, you have to first generalize the image to remove computer-specific information such as device drivers and the computer security identifier (SID). You can either use [sysprep](sysprep--system-preparation--overview.md) or an [unattend](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/) answer file to generalize your image and make it ready for deployment.
 
-In most deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. The `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+##  Generalizing a Windows installation
 
-**Caution**  
-Don't use the Windows Store to update your Windows Store apps before running **sysprep /generalize**. **Sysprep** fails to generalize the image in this scenario. This issue also applies to the Windows Store apps (for example, Mail, Maps, Bing Finance, Bing News, and others). This can occur when you are customizing your installation in audit mode as the built in administrator, or when using a specific user account. The following error appears in the sysprep log files (%WINDIR%\\System32\\Sysprep\\Panther):
+When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize.md) configuration pass. Even if you're capturing an image that's going to be deployed to a PC with similar hardware, you still have to generalize the Windows installation to remove unique PC-specific information from a Windows installation, which allows you to safely reuse your image.
+
+When you generalize an image, Windows replaces the computer SID only on the operating system volume where you ran sysprep. If a single computer has multiple operating systems, you must run **Sysprep** on each image individually.
+
+If you're generalizing Windows Server that has Remote Authentication Dial-In User Service (RADIUS) clients or remote RADIUS server groups defined in the Network Policy Server (NPS) configuration, you should remove this information before you deploy it to a different computer. For more information, see [Prepare a Network Policy Server (NPS) for Imaging](prepare-a-network-policy-server--nps--for-imaging.md).
+
+### Prevent sysprep from removing drivers
+
+When you set up a Windows PC, Windows Setup installs drivers for any detected devices. By default, Windows Setup removes these drivers when you generalize the system, and the drivers have to be reinstalled when you deploy the image. 
+
+If you're deploying an image to computers that have the same hardware and devices as the original PC, you can keep these drivers on the computer during system generalization by using an unattend file with Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` set to **true**. For more information about **Sysprep**-related Windows unattend components, see the [Unattended Windows Setup Reference for Microsoft-Windows-PnpSysprep](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-pnpsysprep).
+
+### Limits on how many times you can run Sysprep
+
+You can run the **Sysprep** command up to 8 times on a single Windows image. After running Sysprep 8 times, you must recreate your Windows image. In previous versions of Windows, you could use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when running sysprep. If you are using a volume licensing key or a retail product key, you don't have to use `SkipRearm` because Windows is automatically activated. 
+
+
+### Store Apps
+
+Updating your Windows Store apps before generalizing a Windows image will cause Sysprep to fail. `Sysprep /generalize` requires that all apps are provisioned for all users, however, when you update an app from the Windows Store, that app becomes tied to the user account. The following error appears in the sysprep log files (%WINDIR%\\System32\\Sysprep\\Panther):
 
 `<package name> was installed for a user, but not provisioned for all users. This package will not function properly in the sysprep image.`
 
-**Sysprep /generalize** requires that all apps are provisioned for all users. However, when you update an app from the Windows Store, that app becomes non-provisioned and is tied that user account.
 
-Instead of using the Windows Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Windows Store on their destination PCs. In managed environments, if Windows Store access is disabled by an IT administrator, you will not be able to update the Windows Store apps.
+Instead of using the Windows Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Windows Store on their destination PCs. If Windows Store access in a managed environment is disabled by an IT administrator, end-users will not be able to update the Windows Store apps.
 
 For more information about sideloading line-of-business Windows Store apps, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md) and [Customize the Start Screen](customize-the-start-screen.md).
 
- 
 
-If your server has Remote Authentication Dial-In User Service (RADIUS) clients or remote RADIUS server groups defined in the Network Policy Server (NPS) configuration, you should remove this information before you deploy it to a different computer. For more information, see [Prepare a Network Policy Server (NPS) for Imaging](prepare-a-network-policy-server--nps--for-imaging.md).
+## Generalize an image
 
-## <span id="bkmk_1"></span><span id="BKMK_1"></span>Generalizing an Image
+### Generalize from Audit Mode
 
+To generalize an image, you have to fist boot into Audit Mode. You can do boot into Audit Mode using unattend or from OOBE. You can read about the different ways of booting into audit mode at [Boot Windows to audit mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
-When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize.md) configuration pass. You must run the **Sysprep** command together with the **/generalize** option, even if the technician computer and the reference computer have the same hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can safely reuse that image on a different computer. But, you can persist drivers during the generalize configuration pass.
+1. Boot a PC into Audit Mode. When Windows boots into Audit Mode, **System Preparation Tool** will appear on the desktop. Leave the **System Preparation Tool** window open. 
 
-**Important**  
-When you set up your reference computer, Windows Setup installs drivers for any detected devices. By default, Windows Setup removes these drivers when you generalize the system. If you're deploying the image to computers that have the same hardware and devices, you'll want Windows Setup to reinstall these same drivers. To keep these drivers on the computer during system generalization, set the Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` setting to **true**. For more information about **Sysprep**-related Windows components that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+2. Customize Windows by adding drivers, changing settings, and installing programs.
 
- 
+3. Run sysprep.
 
-Windows replaces only the computer security identifier (SID) on the operating system volume when you run **Sysprep**. When **Sysprep** generalizes an image, it generalizes only the general partition. So if a single computer has multiple operating systems, you must run **Sysprep** on each image individually.
+    - If the **System Preparation Tool** window is still open, click **Generalize**, click **Shutdown**, and then click **OK** to generalize the image and shut down the PC.
 
-**To generalize your image**
+    -or-
 
-1.  Add one of these settings to your answer file:
-
-    -   Use the Microsoft-Windows-Deployment | `Generalize` setting. Set `Mode` to **OOBE** or **Audit**, and set `ForceShutdownNow` to **true**. The computer automatically generalizes the image and shuts down.
-
-        -or-
-
-    -   Add the Microsoft-Windows-Deployment | `Reseal` setting to the [oobeSystem](oobesystem.md) configuration pass. Set `Mode` to **Audit**. After the computer boots in audit mode and displays the **System Preparation Tool** window, use one of these methods:
-
-        -   In the **System Preparation Tool** window, click **Generalize**, click **Shutdown**, and then click **OK**. The computer generalizes the image and shuts down.
-
-            -or-
-
-        -   Close the **System Preparation Tool** window, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory. Use the **Sysprep** command together with the **/generalize**, **/shutdown**, and **/oobe** options. For example:
-
-            ```
-            Sysprep /generalize /shutdown /oobe
-            ```
-
-            The computer generalizes the image and shuts down.
-
-2.  After the computer shuts down, use an image-capturing tool to capture your image. You can use the **Dism /capture-image** command in the Deployment Image Servicing and Management (**DISM**) tool for this purpose.
-
-3.  Deploy this image to a reference computer. When the reference computer boots, it displays the Out-Of-Box Experience (OOBE) screen.
-
-For more information, see [Settings for Automating OOBE](settings-for-automating-oobe.md) and[Configure Oobe.xml](configure-oobexml.md).
-
-If you have additional customizations, you can enter audit mode manually and make those customizations before you generalize and deploy your image.
-
-**Optional: To enter audit mode manually before you generalize your image**
-
-1.  At the OOBE screen, press Ctrl+Shift+F3. Windows reboots the computer in audit mode, and the **System Preparation Tool** window appears.
-
-    **Caution**  
-    The Ctrl+Shift+F3 keyboard shortcut doesn't bypass all parts of the OOBE process, such as running scripts and applying answer-file settings in the [oobeSystem](oobesystem.md) configuration pass.
-
-     
-
-2.  Add the customizations that you want to include.
-
-3.  In the **System Preparation Tool** window, click **Generalize**, click **Shutdown**, and then click **OK**. The computer generalizes the image and shuts down.
-
-     -or-
-
-    Close the **System Preparation Tool** window, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory. Use the **Sysprep** command together with the **/generalize**, **/shutdown**, and **/oobe** options. For example:
+    -   Use Sysprep from Command Prompt. Run `%WINDIR%\system32\sysprep\sysprep.exe` to open the **System Preparation Window**. You can also use the `Sysprep` command together with the **/generalize**, **/shutdown**, and **/oobe** options. See [Sysprep command-line options](sysprep-command-line-options.md) to see available options.
 
     ```
-    Sysprep /generalize /shutdown /oobe
+    %WINDIR%\system32\sysprep\sysprep.exe /generalize /shutdown /oobe
     ```
+
+    >[!Note]
+    >If you are generalizing a VHD that will be deployed as a VHD on the same virtual machine or hypervisor, use the `/mode:vm` option with the Sysprep command-line.
 
     The computer generalizes the image and shuts down.
 
-4.  After the computer shuts down, use an image-capturing tool to capture your image. You can use the **Dism /capture-image** command in the **DISM** tool for this purpose.
+4.  After the computer shuts down, [capture your image with DISM](capture-images-of-hard-disk-partitions-using-dism.md).
 
-5.  Deploy this image to a reference computer. When the reference computer boots, it displays the OOBE screen.
+5.  Deploy this image to a reference computer. When the reference computer boots, it displays the Out-Of-Box Experience (OOBE) screen.
 
-For more information about audit mode, see:
+### Generalize using unattend
 
--   [Audit Mode Overview](audit-mode-overview.md)
-
--   [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)
-
--   [Add a Driver Online in Audit Mode](add-a-driver-online-in-audit-mode.md)
-
--   [Enable and Disable the Built-in Administrator Account](enable-and-disable-the-built-in-administrator-account.md)
-
-## <span id="bkmk_2"></span><span id="BKMK_2"></span>Generalizing a Virtual Hard Disk
+If you use multiple unattend files during your computer deployment, you can add the following settings to your each of your unattend files so Windows Setup will generalize the PC after processing the unattend file.
 
 
-You can use **Sysprep** VM mode to generalize a VHD that you want to deploy as a VHD on the same virtual machine or hypervisor. VM mode supports rapid deployment of virtual machines. VM mode is supported only when you run it from inside a virtual machine. Additionally, VM mode is available only through the command line. You can't use VM mode to prepare a VHD for deployment to any computer.
+- To automatically generalize the image and shut down, use the Microsoft-Windows-Deployment | `Generalize` setting. Set `Mode` to **OOBE** or **Audit**, and set `ForceShutdownNow` to **true**. 
 
-**To generalize a VHD**
+-or-
 
-1.  In audit mode, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory.
+- To generalize the system, and have it boot into Audit Mode, use the Microsoft-Windows-Deployment | `Reseal` setting to the [oobeSystem](oobesystem.md) configuration pass. Set `Mode` to **Audit**.
 
-2.  Use the **Sysprep** command together with the **/generalize**, **/oobe**, and **/mode:vm** options. For example:
-
-    ```
-    Sysprep /generalize /oobe /mode:vm
-    ```
-
-    The computer generalizes the VHD image.
-
-3.  Deploy the generalized VHD image on the same virtual machine. When the virtual machine reboots, it displays the OOBE screen.
-
-The only additional options that apply to VM mode are **/reboot**, **/shutdown**, and **/quit**.
 
 ## <span id="related_topics"></span>Related topics
 

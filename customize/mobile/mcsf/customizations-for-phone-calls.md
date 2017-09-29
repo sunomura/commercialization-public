@@ -81,7 +81,7 @@ Provides information about customizations you can configure for the phone or dia
 </tr>
 <tr class="odd">
 <td><p>[Disable video upgrade Store navigation](disable-video-upgrade-store-navigation.md)</p></td>
-<td><p>Disable automatic navigation to the Windows Store when the user attempts a video upgrade for which there is no installed app.</p></td>
+<td><p>Disable automatic navigation to the Microsoft Store when the user attempts a video upgrade for which there is no installed app.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Disable voicemail phone number display](disable-voicemail-phone-number-display.md)</p></td>

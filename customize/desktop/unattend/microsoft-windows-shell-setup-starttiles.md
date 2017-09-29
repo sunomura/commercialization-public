@@ -585,11 +585,11 @@ The following tables show the typical number of rows of tiles on different combi
 </tr>
 <tr class="odd">
 <td><p>[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)</p></td>
-<td><p>Specifies the default Windows Store apps to appear as square tiles on the Start screen.</p></td>
+<td><p>Specifies the default Microsoft Store apps to appear as square tiles on the Start screen.</p></td>
 </tr>
 <tr class="even">
 <td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)</p></td>
-<td><p>Specifies the default Windows Store apps to appear as wide tiles on the Start screen.</p></td>
+<td><p>Specifies the default Microsoft Store apps to appear as wide tiles on the Start screen.</p></td>
 </tr>
 </tbody>
 </table>

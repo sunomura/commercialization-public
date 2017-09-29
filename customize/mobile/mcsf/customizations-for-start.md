@@ -34,7 +34,7 @@ This section contains information about customizations related to Start.
 <tbody>
 <tr class="odd">
 <td><p>[Store live tile](store-live-tile.md)</p></td>
-<td><p>The Store tile, when medium-sized, becomes a live tile. It shows both the Windows Store logo and the name. The Windows Store live tile cycles through apps that the user will see in the Store and lets the user discover apps outside of the Store. By default, the Store live tile is on and out-of-the-box, the live tile is only updated over Wi-Fi until the user enters the Store for the first time. After the user enters the Store, the OS will start using cellular data to update the Store live tile in the background.</p>
+<td><p>The Store tile, when medium-sized, becomes a live tile. It shows both the Microsoft Store logo and the name. The Microsoft Store live tile cycles through apps that the user will see in the Store and lets the user discover apps outside of the Store. By default, the Store live tile is on and out-of-the-box, the live tile is only updated over Wi-Fi until the user enters the Store for the first time. After the user enters the Store, the OS will start using cellular data to update the Store live tile in the background.</p>
 <p>Microsoft recommends that partners keep the default Store live tile behavior. However, partners may change the default behavior to turn off the Store live tile and to prevent the OS from using cellular data to update the Store live tile in the background.</p></td>
 </tr>
 </tbody>

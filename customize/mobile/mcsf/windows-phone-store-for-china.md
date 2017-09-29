@@ -1,5 +1,5 @@
 ---
-title: Windows Store for China
+title: Microsoft Store for China
 description: For a Windows 10 Mobile device shipping in China, OEMs must specify that the device is intended for that market by setting the PhoneROMLanguage setting in DeviceTargetingInfo to the appropriate locale ID.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,10 +12,10 @@ ms.prod: windows-hardware
 ms.technology: windows-oem
 ---
 
-# Windows Store for China
+# Microsoft Store for China
 
 
-For a Windows 10 Mobile device shipping in China, OEMs must specify that the device is intended for that market by setting the **PhoneROMLanguage** setting in **DeviceTargetingInfo** to the appropriate locale ID. For example, for Chinese (China) the locale ID must be set to 0804. When enabled, users are routed to the Windows Store for China.
+For a Windows 10 Mobile device shipping in China, OEMs must specify that the device is intended for that market by setting the **PhoneROMLanguage** setting in **DeviceTargetingInfo** to the appropriate locale ID. For example, for Chinese (China) the locale ID must be set to 0804. When enabled, users are routed to the Microsoft Store for China.
 
 **Note**  
 This customization is only a requirement for China.
@@ -100,7 +100,7 @@ This customization is only a requirement for China.
 <a href="" id="testing-"></a>**Testing:**  
 1.  Flash the build containing this customization to a device with a UICC.
 
-2.  From the device, launch the Windows Store and verify that you are routed to the store for China.
+2.  From the device, launch the Microsoft Store and verify that you are routed to the store for China.
 
  
 

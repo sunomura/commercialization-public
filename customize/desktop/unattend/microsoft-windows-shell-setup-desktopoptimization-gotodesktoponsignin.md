@@ -73,7 +73,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output specifies to go to the desktop on sign in and to show Windows Store apps on the taskbar.
+The following XML output specifies to go to the desktop on sign in and to show Microsoft Store apps on the taskbar.
 
 ```
 <DesktopOptimization>

@@ -161,7 +161,7 @@ Note: Using the high performance power scheme can make the device run hotter tha
 1.  In Notepad, edit the file: `C:\WinPE_amd64\mount\windows\system32\startnet.cmd`, adding a command to set the power scheme to High Performance.
 
     ```
-    winpeinit
+    wpeinit
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 
     ```
 

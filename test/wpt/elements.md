@@ -8,7 +8,7 @@ ms.assetid: 93024039-529c-439f-9c91-f6174f4a91e7
 ms.mktglfcycl: operate
 ms.sitesec: msdn
 ms.author: sapaetsc
-ms.date: 05/05/2017
+ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -19,203 +19,107 @@ ms.technology: windows-oem
 
 The following represents the element hierarchy.
 
-&lt;[WindowsPerformanceRecorder](windowsperformancerecorder.md)&gt;
+* <[WindowsPerformanceRecorder](windowsperformancerecorder.md)>
+  * <[Profiles](profiles.md)>
+    * <[SystemCollector](systemcollector.md)>
+      * <[BufferSize](buffersize.md)>
+      * <[Buffers](buffers.md)>
+      * <[StackCaching](stackcaching.md)>
+    * <[EventCollector](eventcollector.md)>
+      * <[BufferSize](buffersize.md)>
+      * <[Buffers](buffers.md)>
+      * <[StackCaching](stackcaching.md)>
+    * <[HeapEventCollector](heapeventcollector.md)>
+      * <[BufferSize](buffersize.md)>
+      * <[Buffers](buffers.md)>
+      * <[StackCaching](stackcaching.md)>
+    * <[SystemProvider](systemprovider.md)>
+      * <[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)>
+        * <[Keyword (in SystemProvider)](keyword--in-systemprovider-.md)>
+        * <[CustomKeyword](customkeyword.md)>
+      * <[Stacks](stacks.md)>
+        * <[Stack](stack-wpa.md)>
+      * <[PoolTags](pooltags.md)>
+        * <[PoolTag](pooltag.md)>
+    * <[EventProvider](eventprovider.md)>
+      * <[Keywords (in EventProvider)](keywords--in-eventprovider-.md)>
+        * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+      * <[CaptureStateOnStart](capturestateonstart.md)>
+        * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+      * <[CaptureStateOnSave](capturestateonsave.md)>
+        * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+    * <[HeapEventProvider](heapeventprovider.md)>
+      * <[HeapProcessIds](heapprocessids.md)>
+        * <[HeapProcessId](heapprocessid.md)>
+    * <[Profile](profile-wpr.md)>
+      * <[ProblemCategories](problemcategories.md)>
+        * <[ProblemCategory](problemcategory.md)>
+      * <[Collectors](collectors.md)>
+        * <[SystemCollectorId](systemcollectorid.md)>
+          * <[BufferSize](buffersize.md)>
+          * <[Buffers](buffers.md)>
+          * <[StackCaching](stackcaching.md)>
+          * <[SystemProviderId](systemproviderid.md)>
+            * <[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)>
+              * <[Keyword (in SystemProvider)](keyword--in-systemprovider-.md)>
+              * <[CustomKeyword](customkeyword.md)>
+            * <[Stacks](stacks.md)>
+              * <[Stack](stack-wpa.md)>
+            * <[PoolTags](pooltags.md)>
+              * <[PoolTag](pooltag.md)>
+          * <[SystemProvider](systemprovider.md)>
+            * <[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)>
+              * <[Keyword (in SystemProvider)](keyword--in-systemprovider-.md)>
+              * <[CustomKeyword](customkeyword.md)>
+            * <[Stacks](stacks.md)>
+              * <[Stack](stack-wpa.md)>
+            * <[PoolTags](pooltags.md)>
+              * <[PoolTag](pooltag.md)>
+        * <[EventCollectorId](eventcollectorid.md)>
+          * <[BufferSize](buffersize.md)>
+          * <[Buffers](buffers.md)>
+          * <[StackCaching](stackcaching.md)>
+          * <[EventProviders](eventproviders.md)>
+            * <[EventProviderId](eventproviderid.md)>
+              * <[Keywords (in EventProvider)](keywords--in-eventprovider-.md)>
+                * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+              * <[CaptureStateOnStart](capturestateonstart.md)>
+                * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+              * <[CaptureStateOnSave](capturestateonsave.md)>
+                * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+            * <[EventProvider](eventprovider.md)>
+              * <[Keywords (in EventProvider)](keywords--in-eventprovider-.md)>
+                * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+              * <[CaptureStateOnStart](capturestateonstart.md)>
+                * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+              * <[CaptureStateOnSave](capturestateonsave.md)>
+                * <[Keyword (in EventProvider)](keyword--in-eventprovider-.md)>
+        * <[HeapEventCollectorId](heapeventcollectorid.md)>
+          * <[BufferSize](buffersize.md)>
+          * <[Buffers](buffers.md)>
+          * <[StackCaching](stackcaching.md)>
+          * <[HeapEventProviders](heapeventproviders.md)>
+            * <[HeapEventProviderId](heapeventproviderid.md)>
+              * <[HeapProcessIds](heapprocessids.md)>
+                * <[HeapProcessId](heapprocessid.md)>
+            * <[HeapEventProvider](heapeventprovider.md)>
+              * <[HeapProcessIds](heapprocessids.md)>
+                * <[HeapProcessId](heapprocessid.md)>
+  * <[TraceMergeProperties](tracemergeproperties.md)>
+    * <[TraceMergeProperty](tracemergeproperty.md)>
+      * <[DeletePreMergedTraceFiles](deletepremergedtracefiles.md)>
+      * <[CustomEvents](customevents.md)>
+        * <[CustomEvent](customevent.md)>
+      * <[FileCompression](filecompression.md)>
+  * <[OnOffTransitionConfigurations](onofftransitionconfigurations.md)>
+    * <[OnOffTransitionConfiguration](onofftransitionconfiguration.md)>
+      * <[PrepareSystem](preparesystem.md)>
+      * <[NumberOfRuns](numberofruns.md)>
+      * <[PostBootDelay](postbootdelay.md)>
+      * <[WakeupDelay](wakeupdelay.md)>
+      * <[TransitionTag](transitiontag.md)>
 
-     &lt;[Profiles](profiles.md)&gt;
 
-          &lt;[SystemCollector](systemcollector.md)&gt;
-
-                &lt;[BufferSize](buffersize.md)&gt;
-
-                &lt;[Buffers](buffers.md)&gt;
-
-                &lt;[StackCaching](stackcaching.md)&gt;
-
-          &lt;[EventCollector](eventcollector.md)&gt;
-
-                &lt;[BufferSize](buffersize.md)&gt;
-
-                &lt;[Buffers](buffers.md)&gt;
-
-                &lt;[StackCaching](stackcaching.md)&gt;
-
-          &lt;[HeapEventCollector](heapeventcollector.md)&gt;
-
-                &lt;[BufferSize](buffersize.md)&gt;
-
-                &lt;[Buffers](buffers.md)&gt;
-
-                &lt;[StackCaching](stackcaching.md)&gt;
-
-          &lt;[SystemProvider](systemprovider.md)&gt;
-
-                &lt;[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)&gt;
-
-                     &lt;[Keyword (in SystemProvider)](keyword--in-systemprovider-.md)&gt;
-
-                     &lt;[CustomKeyword](customkeyword.md)&gt;
-
-                &lt;[Stacks](stacks.md)&gt;
-
-                     &lt;[Stack](stack-wpa.md)&gt;
-
-                &lt;[PoolTags](pooltags.md)&gt;
-
-                     &lt;[PoolTag](pooltag.md)&gt;
-
-          &lt;[EventProvider](eventprovider.md)&gt;
-
-                &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                     &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                &lt;[CaptureStateOnStart](capturestateonstart.md)&gt;
-
-                     &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                &lt;[CaptureStateOnSave](capturestateonsave.md)&gt;
-
-                     &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-          &lt;[HeapEventProvider](heapeventprovider.md)&gt;
-
-                &lt;[HeapProcessIds](heapprocessids.md)&gt;
-
-                     &lt;[HeapProcessId](heapprocessid.md)&gt;
-
-          &lt;[Profile](profile-wpr.md)&gt;
-
-                &lt;[ProblemCategories](problemcategories.md)&gt;
-
-                     &lt;[ProblemCategory](problemcategory.md)&gt;
-
-                &lt;[Collectors](collectors.md)&gt;
-
-                     &lt;[SystemCollectorId](systemcollectorid.md)&gt;
-
-                          &lt;[BufferSize](buffersize.md)&gt;
-
-                          &lt;[Buffers](buffers.md)&gt;
-
-                          &lt;[StackCaching](stackcaching.md)&gt;
-
-                          &lt;[SystemProviderId](systemproviderid.md)&gt;
-
-                               &lt;[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)&gt;
-
-                                    &lt;[Keyword (in SystemProvider)](keyword--in-systemprovider-.md)&gt;
-
-                                    &lt;[CustomKeyword](customkeyword.md)&gt;
-
-                               &lt;[Stacks](stacks.md)&gt;
-
-                                    &lt;[Stack](stack-wpa.md)&gt;
-
-                               &lt;[PoolTags](pooltags.md)&gt;
-
-                                    &lt;[PoolTag](pooltag.md)&gt;
-
-                          &lt;[SystemProvider](systemprovider.md)&gt;
-
-                               &lt;[Keywords (in SystemProvider)](keywords--in-systemprovider-.md)&gt;
-
-                                    &lt;[Keyword (in SystemProvider)](keyword--in-systemprovider-.md)&gt;
-
-                                    &lt;[CustomKeyword](customkeyword.md)&gt;
-
-                               &lt;[Stacks](stacks.md)&gt;
-
-                                    &lt;[Stack](stack-wpa.md)&gt;
-
-                               &lt;[PoolTags](pooltags.md)&gt;
-
-                                    &lt;[PoolTag](pooltag.md)&gt;
-
-                     &lt;[EventCollectorId](eventcollectorid.md)&gt;
-
-                          &lt;[BufferSize](buffersize.md)&gt;
-
-                          &lt;[Buffers](buffers.md)&gt;
-
-                          &lt;[StackCaching](stackcaching.md)&gt;
-
-                          &lt;[EventProviders](eventproviders.md)&gt;
-
-                               &lt;[EventProviderId](eventproviderid.md)&gt;
-
-                                    &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                                         &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                                    &lt;[CaptureStateOnStart](capturestateonstart.md)&gt;
-
-                                         &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                                    &lt;[CaptureStateOnSave](capturestateonsave.md)&gt;
-
-                                         &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                               &lt;[EventProvider](eventprovider.md)&gt;
-
-                                    &lt;[Keywords (in EventProvider)](keywords--in-eventprovider-.md)&gt;
-
-                                         &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                                    &lt;[CaptureStateOnStart](capturestateonstart.md)&gt;
-
-                                         &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                                    &lt;[CaptureStateOnSave](capturestateonsave.md)&gt;
-
-                                         &lt;[Keyword (in EventProvider)](keyword--in-eventprovider-.md)&gt;
-
-                     &lt;[HeapEventCollectorId](heapeventcollectorid.md)&gt;
-
-                          &lt;[BufferSize](buffersize.md)&gt;
-
-                          &lt;[Buffers](buffers.md)&gt;
-
-                          &lt;[StackCaching](stackcaching.md)&gt;
-
-                          &lt;[HeapEventProviders](heapeventproviders.md)&gt;
-
-                               &lt;[HeapEventProviderId](heapeventproviderid.md)&gt;
-
-                                    &lt;[HeapProcessIds](heapprocessids.md)&gt;
-
-                                         &lt;[HeapProcessId](heapprocessid.md)&gt;
-
-                               &lt;[HeapEventProvider](heapeventprovider.md)&gt;
-
-                                    &lt;[HeapProcessIds](heapprocessids.md)&gt;
-
-                                         &lt;[HeapProcessId](heapprocessid.md)&gt;
-
-     &lt;[TraceMergeProperties](tracemergeproperties.md)&gt;
-
-          &lt;[TraceMergeProperty](tracemergeproperty.md)&gt;
-
-               &lt;[DeletePreMergedTraceFiles](deletepremergedtracefiles.md)&gt;
-
-               &lt;[CustomEvents](customevents.md)&gt;
-
-                    &lt;[CustomEvent](customevent.md)&gt;
-
-               &lt;[FileCompression](filecompression.md)&gt;
-
-     &lt;[OnOffTransitionConfigurations](onofftransitionconfigurations.md)&gt;
-
-          &lt;[OnOffTransitionConfiguration](onofftransitionconfiguration.md)&gt;
-
-               &lt;[PrepareSystem](preparesystem.md)&gt;
-
-               &lt;[NumberOfRuns](numberofruns.md)&gt;
-
-               &lt;[PostBootDelay](postbootdelay.md)&gt;
-
-               &lt;[WakeupDelay](wakeupdelay.md)&gt;
-
-               &lt;[TransitionTag](transitiontag.md)&gt;
 
 This following section describes the elements that you can use to author recording profiles for Windows Performance Recorder (WPR).
 

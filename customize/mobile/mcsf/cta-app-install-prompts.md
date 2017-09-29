@@ -25,7 +25,7 @@ The dialog must be shown when the app being downloaded does any of the following
 
 -   Invokes user data from a phone book
 
--   Uses recording from the Windows Store
+-   Uses recording from the Microsoft Store
 
 -   Uses location data
 
@@ -74,7 +74,7 @@ The dialog must be shown when the app being downloaded does any of the following
     <tbody>
     <tr class="odd">
     <td><p>1 or 'Yes'</p></td>
-    <td><p>Shows a notification dialog when the user downloads an app from the Windows Store that supports the functionality described for the customization.</p></td>
+    <td><p>Shows a notification dialog when the user downloads an app from the Microsoft Store that supports the functionality described for the customization.</p></td>
     </tr>
     <tr class="even">
     <td><p>0 or 'No'</p></td>
@@ -88,11 +88,11 @@ The dialog must be shown when the app being downloaded does any of the following
     If the setting is not set, the feature is not enabled.
 
 <a href="" id="testing-"></a>**Testing:**  
-To fully test this customization, the phone must also be configured to use [Windows Store for China](windows-phone-store-for-china.md).
+To fully test this customization, the phone must also be configured to use [Microsoft Store for China](windows-phone-store-for-china.md).
 
 1.  Flash the build containing this customization to a phone.
 
-2.  Go to the Windows Store and download and install an app that can invoke the phone book.
+2.  Go to the Microsoft Store and download and install an app that can invoke the phone book.
 
 3.  Open the app to access the device's native phone book.
 

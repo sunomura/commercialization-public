@@ -19,7 +19,7 @@ OEM can configure lens apps to launch above the lock screen.
 
 For lens apps that OEMs have configured to be user selectable default camera app, OEMs can add functionality to launch these lens apps above the lock screen when the user presses the camera button.
 
-Microsoft recommends that OEMs configure only up to five (5) lens apps capable of running above the lock screen. The lens apps can be preloaded by OEMs or installed by users from the Windows Store.
+Microsoft recommends that OEMs configure only up to five (5) lens apps capable of running above the lock screen. The lens apps can be preloaded by OEMs or installed by users from the Microsoft Store.
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 

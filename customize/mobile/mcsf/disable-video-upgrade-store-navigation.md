@@ -1,6 +1,6 @@
 ---
 title: Disable video upgrade Store navigation
-description: Disable automatic navigation to the Windows Store when the user attempts a video upgrade for which there is no installed app.
+description: Disable automatic navigation to the Microsoft Store when the user attempts a video upgrade for which there is no installed app.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,9 +15,9 @@ ms.technology: windows-oem
 # Disable video upgrade Store navigation
 
 
-Disable automatic navigation to the Windows Store when the user attempts a video upgrade for which there is no installed app.
+Disable automatic navigation to the Microsoft Store when the user attempts a video upgrade for which there is no installed app.
 
-By default, if there are no compatible video upgrade apps installed on the phone, when a user taps the video upgrade button during a phone call, a dialog is launched and the phone will navigate to the Windows Store. Partners can change this behavior so that if the user taps the video upgrade button, a dialog is launched that informs the user that no video app is installed, but the phone will not navigate to the Windows Store directly.
+By default, if there are no compatible video upgrade apps installed on the phone, when a user taps the video upgrade button during a phone call, a dialog is launched and the phone will navigate to the Microsoft Store. Partners can change this behavior so that if the user taps the video upgrade button, a dialog is launched that informs the user that no video app is installed, but the phone will not navigate to the Microsoft Store directly.
 
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  
 

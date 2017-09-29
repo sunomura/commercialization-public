@@ -23,11 +23,6 @@ A minifilter driver is a file system filter that intercepts requests that are ta
 
 A minifilter exposes callbacks for pre and post processing of file I/O. The filter driver communicates with the minifilter through these callbacks. Minifilters are used to process standard I/O. For scenarios when an application uses memory mapped files, see [Memory Mapped Files in a File System Filter Driver](https://msdn.microsoft.com/windows/hardware/drivers/ifs/memory-mapped-files-in-a-file-system-filter-driver).
 
-In this topic:
-
--   [About Minifilter Diagnostic Mode](#bkmk-minifilterabout)
-
--   [Metrics](#bkmk-minifiltermetrics)
 
 ## <a href="" id="bkmk-minifilterabout"></a>About Minifilter Diagnostic Mode
 
@@ -60,19 +55,19 @@ These three assessments are also available with minifilter diagnostics enabled b
 
 Running all three assessments (with minifilter diagnostics enabled), provides a broad view of how minifilters affect the system. Each assessment runs a particular scenario and collects data on the behavior of the minifilters installed on the system. This data can then be analyzed using the Windows Assessment Console, the Windows Assessment Services - Client (Windows ASC) or Windows Performance Analyzer (WPA). The assessment tools group the data in a different way than WPA does, but all of these tools enable you to drill down to see the effect of the minifilters.
 
-**Minifilter Diagnostic: File Handling assessment**
+### Minifilter Diagnostic: File Handling assessment
 
 The Minifilter Diagnostic: File Handling assessment performs file system actions such as moving, copying and deleting files on the file system. This assessment measures wall clock time and throughput for each of these types of I/O. For more information about this assessment, see [File Handling](file-handling.md).
 
 The Minifilter Diagnostic: File Handling assessment collects data such as the wall clock time required to copy, move or delete a file on the file system, in addition to throughput, where applicable. When you drill down to see all the major minifilter callback routines, you can find the number of times that each was called, the time it took to complete the calls, and the average and maximum times.
 
-**Minifilter Diagnostic: Internet Explorer**
+### Minifilter Diagnostic: Internet Explorer
 
 The Minifilter Diagnostic: Internet Explorer assessment opens a single tab with simple content, in a new Internet Explorer window. Internet Explorer is a medium to large size application that has a long list of dependent DLLs. The assessment serves as a proxy for starting any application and then monitoring how well the installed minifilters behave. For more information about this assessment, see [Internet Explorer Startup Performance](internet-explorer-startup-performance.md).
 
 The Minifilter Diagnostic: Internet Explorer assessment provides data such as the time that it takes to create a frame, create a tab, and start the application. When you drill down to see all the major mini filter callback routines, you can find the number of times that each was called, the time it took to complete the calls, and the average and maximum times.
 
-**Minifilter Diagnostic: Boot Performance (Fast Startup)**
+### Minifilter Diagnostic: Boot Performance (Fast Startup)
 
 The Minifilter Diagnostic: Boot Performance (Fast Startup) assessment boots the system and monitors I/O activity during this critical time period. The results data is organized by the phase of the boot. There are 17 phases to the boot process. A given mini filter may affect the boot in more than one phase. For more information about this assessment, see [On/Off Transition Performance](onoff-transition-performance.md).
 
@@ -115,10 +110,8 @@ The minifilter diagnostic mode produces duration metrics. For example, when the 
 
 Minifilter metric values are deeply nested under logical groupings. This hierarchy of results enables you to view the details of an assessment workload or phase that generated the results that you are interested in. Once you expand the results for a workload, you can see the list of minifilters and the results that they each provide that are aggregated to the workload level. Select a particular minifilter from the list, and you can see the list of calls made against that minifilter. Select an interesting call, and you can review the pre- or post-operations that generated the results that you find interesting. Here’s an example:
 
-**Note**  
-In the File Handling Performance assessment, the first level of detail is called the *Workload* level. In Boot Performance assessment or in the Internet Explorer Startup Performance assessment, the first level of detail is called the *Phase* level.
-
- 
+> [!NOTE]
+> In the File Handling Performance assessment, the first level of detail is called the *Workload* level. In Boot Performance assessment or in the Internet Explorer Startup Performance assessment, the first level of detail is called the *Phase* level.
 
 ![sample results for minifilter drill down](images/dep-win8-8-techref-minifilterdrilldown-sample.jpg)
 
@@ -226,14 +219,4 @@ There are no remediation steps as this metric is only dependent on the applicati
 [Assessments](assessments.md)
 
 [On/Off Transition Performance](onoff-transition-performance.md)
-
- 
-
- 
-
-
-
-
-
-
 

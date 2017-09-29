@@ -5,7 +5,7 @@ ms.assetid: a801d768-0397-4f85-b68f-bd85ddcc3f1f
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1b: Add an app to your image'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -46,7 +46,7 @@ You can skip these steps if you've already created and tested your app.
 
 **Create a package for an app**
 
-1.  Launch the IoT Core Shell.
+1.  Open the IoT Core Shell: run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create a new package for the app, for example:
 
@@ -73,36 +73,37 @@ You can skip these steps if you've already created and tested your app.
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_MyUWPApp".
 
+    ``` xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <FeatureManifest 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+      xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+      <BasePackages/>
+      <Features>
+        <OEM>
+          <!-- Feature definitions below -->
+          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTCoreDefaultApp.cab">
+            <FeatureIDs>
+              <FeatureID>OEM_IoTCoreDefaultApp</FeatureID>
+            </FeatureIDs>
+          </PackageFile>
+    	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTOnboardingTask.cab">
+            <FeatureIDs>
+              <FeatureID>OEM_IoTOnboardingTask</FeatureID>
+            </FeatureIDs>
+          </PackageFile>
+    	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.MyUWPApp.cab">
+            <FeatureIDs>
+              <FeatureID>OEM_MyUWPApp</FeatureID>
+            </FeatureIDs>
+          </PackageFile>	  
+        </OEM>
+        <OEMFeatureGroups/>
+      </Features>
+    </FeatureManifest>
     ```
-<?xml version="1.0" encoding="utf-8"?>
-<FeatureManifest 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-  xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
-  <BasePackages/>
-  <Features>
-    <OEM>
-      <!-- Feature definitions below -->
-      <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTCoreDefaultApp.cab">
-        <FeatureIDs>
-          <FeatureID>OEM_IoTCoreDefaultApp</FeatureID>
-        </FeatureIDs>
-      </PackageFile>
-	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTOnboardingTask.cab">
-        <FeatureIDs>
-          <FeatureID>OEM_IoTOnboardingTask</FeatureID>
-        </FeatureIDs>
-      </PackageFile>
-	  <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.MyUWPApp.cab">
-        <FeatureIDs>
-          <FeatureID>OEM_MyUWPApp</FeatureID>
-        </FeatureIDs>
-      </PackageFile>	  
-    </OEM>
-    <OEMFeatureGroups/>
-  </Features>
-</FeatureManifest>
-    ```
+
 3. Run `buildfm oem` to generate updated files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
 
   You'll now be able to add your app to any of your products by adding a reference to this feature manifest and Feature ID.
@@ -115,7 +116,7 @@ You can skip these steps if you've already created and tested your app.
 
 2.  Make sure both your feature manifest, OEMFM.xml, and the feature manifest: OEMCommonFM.xml, are both listed in the AdditionalFMs section.
 
-    ```
+    ``` xml
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -135,7 +136,7 @@ You can skip these steps if you've already created and tested your app.
 
     c. Add the FeatureID for your app package, example: OEM_MyUWPApp.
     
-    ```
+    ``` xml
     <Features>
       <Microsoft>
     
@@ -177,6 +178,6 @@ After a short while, the device should start automatically, and you should see y
 
 [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
 
- ## <span id="Related_topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related topics
+## <span id="Related_topics"></span> Related topics
 
-[Update apps on your IoT Core devices](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps)
+[Update apps on your IoT Core devices](../../service/iot/updating-iot-core-apps.md)

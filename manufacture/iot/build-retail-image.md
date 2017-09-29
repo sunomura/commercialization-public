@@ -25,11 +25,11 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 ## <span id="Add_your_app_to_the_retail_configuration_file"></span><span id="add_your_app_to_the_retail_configuration_file"></span><span id="ADD_YOUR_APP_TO_THE_RETAIL_CONFIGURATION_FILE"></span>Add your app to the retail configuration file
 
-1.  Open your product's retail configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\RetailOEMInput.xml**..
+1.  Open your product's retail configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\RetailOEMInput.xml**.
 
 2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
 
-    ```
+    ``` xml
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -39,9 +39,9 @@ We'll take our customizations, put them together, and test them in a retail buil
     </AdditionalFMs>
     ```
 
-3.  Add the FeatureIDs for the your app package, the  and the OEM\_CustomCmd package.
+3.  Add the FeatureIDs for the your app package, and the OEM\_CustomCmd package.
 
-    ```
+    ``` xml
     <OEM> 
        <!-- Include BSP Features -->
        <Feature>RPI2_DRIVERS</Feature> 
@@ -70,7 +70,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 
 **Build the image**
 
-1.  [Get a code-signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
+1.  [Get a code-signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/update-a-code-signing-certificate).
 
 2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 
@@ -82,7 +82,7 @@ We'll take our customizations, put them together, and test them in a retail buil
 	
 	-  Subject       : Subject in the certificate ( see Certificate -> Details -> Subject)
 	
-	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://msdn.microsoft.com/windows/hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
+	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
 	
 	
 2.	From the IoT Core Shell, enable retail signing.

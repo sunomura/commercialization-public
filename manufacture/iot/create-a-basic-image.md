@@ -5,7 +5,7 @@ ms.assetid: aeba79b8-d8dd-481a-a8bf-03ae28174632
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1a: Create a basic image'
 ms.author: themar
-ms.date: 05/02/2017
+ms.date: 9/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-oem
@@ -16,6 +16,8 @@ ms.technology: windows-oem
 To get started, we'll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything's working properly.
 
 We'll create a product folder that represents our first design. For our first product design, we'll customize just enough for the IoT core device to boot up and run the built-in OOBE app, which we should be able to see on an HDMI-compatible monitor.
+
+To make running these commands easier, we'll install and use the IoT Core shell, which presets several frequently-used paths and variables.
 
 ## Prerequisites
 
@@ -43,18 +45,17 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     The launch tool sets the default architecture, and sets a version number for the design, which you can use for future updates. The first version number defaults to 10.0.0.0.
 
-    (Why a four-part version number? Learn about versioning schemes in [Update requirements](https://msdn.microsoft.com/windows/hardware/commercialize/service/mobile/update-requirements).)
+    (Why a four-part version number? Learn about versioning schemes in [Update requirements](..\..\service\mobile\update-requirements.md)
 
 **Install certificates**
 
-You only need to  install certificates the first time you install the IoT ADK AddonKit. You'll use these to sign your test binaries.
+From the IoT Core Shell, install the test certificates, which you'll use to sign your test binaries. You'll only need to do this the first time you install the IoT ADK Add-on Kit.
 
- ```
+```
 installoemcerts
 ```
 
 The certificates are added to the root. To learn more, see [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn756804)
-	
 
 ### Build a Raspberry Pi BSP (New for Windows 10, Version 1703)
 
@@ -66,10 +67,11 @@ The certificates are added to the root. To learn more, see [Set up the signing e
 cd c:\BSP
 build.cmd
 ```
-For more information on available bsps, see [Windows 10 IoT Core BSPs](https://developer.microsoft.com/windows/iot/docs/bsp).
+For more information on available bsps, see [Windows 10 IoT Core BSPs](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/CreateBSP).
+
 ### Build packages
 
-Get your environment ready to create products by building all of the packages in the working folders.
+From the IoT Core Shell, get your environment ready to create products by building all of the packages in the working folders. 
 
 ```
 buildpkg All
@@ -78,7 +80,7 @@ buildpkg All
 
 ### <span id="Create_a_test_project"></span>Create a test project
 
-Create a new product folder that uses the Rpi2 BSP. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
+From the IoT Core Shell, create a new product folder that uses the Rpi2 BSP. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
 
 ```
 newproduct ProductA rpi2
@@ -92,7 +94,7 @@ This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\Pr
 
 1.  Eject any removable storage drives, including the Micro SD card and any USB flash drives.
 
-2.  Build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
+2.  From the IoT Core Shell, build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
     ```
     buildimage ProductA test

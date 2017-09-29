@@ -151,11 +151,11 @@ When designing your apps, keep the following design considerations in mind:
 
 -   We recommend that you use Universal Windows apps to enable your hub and spoke model.
 
--   When building a shared partner app, be aware that the app might appear in the Windows Store for every mobile device produced by the OEM, every phone ranged by the mobile operator, and might be downloaded by users that have a different mobile operator. To ensure that users do not end up seeing mobile operator configuration options that do not apply to their phone or network, consider these possible mitigations:
+-   When building a shared partner app, be aware that the app might appear in the Microsoft Store for every mobile device produced by the OEM, every phone ranged by the mobile operator, and might be downloaded by users that have a different mobile operator. To ensure that users do not end up seeing mobile operator configuration options that do not apply to their phone or network, consider these possible mitigations:
 
     1.  **Network verification:** The app must verify that the phone is on the specified mobile operator’s network before displaying any account setup functionality for that mobile operator. This can be done by checking the MCC and the MNC of the SIM, or by verifying the registry value `PhoneMobileOperatorName` setting (see [Phone metadata in DeviceTargetingInfo](phone-metadata-in-devicetargetinginfo.md) for more information).
 
-    2.  **System settings app:** The app can be written as a system settings app. This application will appear on the **System** screen in **Settings**, and cannot be pinned to Start. It also will be hidden in the Windows Store so that it cannot be accidentally downloaded. 
+    2.  **System settings app:** The app can be written as a system settings app. This application will appear on the **System** screen in **Settings**, and cannot be pinned to Start. It also will be hidden in the Microsoft Store so that it cannot be accidentally downloaded. 
 
 -   See [Design basics](http://go.microsoft.com/fwlink/p/?LinkId=708326) to learn more about how you can design a Universal Windows app that suits a variety of devices with different display sizes and other tips for creating an app with a great UI.
 

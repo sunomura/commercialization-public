@@ -1103,6 +1103,7 @@
 ####[Microsoft-windows-Tpm-Tasks-ClearTpm](microsoft-windows-tpm-tasks-cleartpm.md)
 ### [Microsoft-Windows-TwinUI](microsoft-windows-twinui.md)
 #### [CustomProtocol](microsoft-windows-twinui-customprotocol.md)
+#### [Hide](microsoft-windows-twinui-hide.md)
 ### [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md)
 #### [Identification](microsoft-windows-unattendedjoin-identification.md)
 ##### [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md)

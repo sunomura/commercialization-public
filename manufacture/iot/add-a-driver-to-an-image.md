@@ -29,7 +29,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--  Complete the exercises in [Installing The Sample Driver](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab1) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
+-  Complete the exercises in [Installing The Sample Driver](https://developer.microsoft.com/windows/iot/samples/driverlab1) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
@@ -57,7 +57,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
     If necessary, update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
     
-    ```
+    ``` xml
     <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00" 
          Owner="$(OEMNAME)" OwnerType="OEM" ReleaseType="Production" 
          Platform="arm" Component="Drivers" SubComponent="HelloBlinky"> 
@@ -95,17 +95,20 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
-    ```      
+    ``` xml
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
             <FeatureIDs>
               <FeatureID>OEM_DriverHelloBlinky</FeatureID>
             </FeatureIDs>
           </PackageFile>
     ```
-3. Run `buildfm bsp rpi2` to generate updated files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
+3. Update the files in the MergedFMs folder. This has to be done every time any time an FM file is modified.
+
+    ```
+    buildfm bsp rpi2
+    ```
 
     You'll now be able to add your driver to your product by adding a reference to this feature manifest.
-
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
@@ -113,7 +116,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 2.  Make sure your feature manifest, Rpi2FM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
-```
+    ``` xml
     <AdditionalFMs>
       <!-- Including BSP feature manifest -->
       <AdditionalFM>%BLD_DIR%\MergedFMs\RPi2FM.xml</AdditionalFM>
@@ -123,12 +126,12 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
        <!-- Including the test features -->
        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
     </AdditionalFMs>
-```
+    ```
 
 
 3.  Add the FeatureID for your driver:
 
-    ```
+    ``` xml
     <OEM>
       <!-- Include BSP Features -->
       <Feature>RPI2_DRIVERS</Feature>

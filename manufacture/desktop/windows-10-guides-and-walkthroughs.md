@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 | Guide | Description |
 | --- | --- |
-| [OEM deployment of Windows 10 for desktop editions](oem-deployment-of-windows-10-for-desktop-editions.md) | End-to-end dsktop manufacturing lab for OEMs |
+| [OEM deployment of Windows 10 for desktop editions](oem-deployment-of-windows-10-for-desktop-editions.md) | End-to-end desktop manufacturing lab for OEMs |
 | [System builder deployment of Windows 10 for desktop editions](system-builder-deployment-of-windows-10-for-desktop-editions.md) | End-to-end lab for system builders |
 | [OEM Windows Desktop Deployment and Imaging Lab](oem-windows-deployment-and-imaging-walkthrough.md) | Collection of walkthroughs for OEM deployments |
 | [Manufacturing Windows Engineering Guide](manufacturing-windows-engineering-guide.md) | Roadmap for OEMs and ODMs of the ideal manufacturing process for Windows 10 devices, with guidance for potential pitfalls and opportunities to streamline the process. |

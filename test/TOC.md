@@ -1,7 +1,7 @@
 # [Test](index.md)
 
-## [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx)
-### [QosRemoteSettings Troubleshooting](hlk/qosremotesettings.md)
+## [Windows Hardware Lab Kit](hlk/windows-hardware-lab-kit.md)
+
 ## [Windows Hardware Certification Kit](https://msdn.microsoft.com/library/windows/hardware/jj124227.aspx)
 
 ## [Windows Performance Toolkit](wpt/index.md)

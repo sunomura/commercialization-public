@@ -29,7 +29,7 @@ We recommend that you [test and track the update](#Test_and_track_the_update) us
 
 Finally, sign and submit the app package to the Windows Store. 
 
-To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/docs/store)
+To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/store)
 
 ## <span id="Test_and_track_the_update"></span><span id="test and track the update"></span><span id="TEST AND TRACK THE UPATE"></span>Test and track the update (recommended)
 
@@ -99,4 +99,4 @@ Try out your updates on your devices before submitting them to the Windows Store
 Open `UpdateVersion.txt` to see descriptions of your packages. The createupdatepkgs tool updates this file when creating a new update.
 
 ### <span id="Test_new_images"></span>Test new images
-Create a new package using the same procedures as shown in [Lab 1b: Add an app to your image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/deploy-your-app-with-a-standard-board).
+Create a new package using the same procedures as shown in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md).

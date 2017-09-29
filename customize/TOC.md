@@ -2,9 +2,18 @@
 
 ## [What's new in customizations](what-s-new-in-customizations.md)
 
-
 ## [Customizations for desktop](desktop/desktop-customizations-portal.md)
 ### [Customize the taskbar](desktop/customize-the-taskbar.md)
+### [Customize the Out of Box Experience (OOBE)](desktop/customize-oobe.md)
+#### [OOBE.xml](desktop/oobexml.md)
+#### [Cortana voice support](desktop/cortana-voice-support.md)
+#### [OEM HID pairing](desktop/oem-hid-pairing.md)
+#### [OEM license terms](desktop/oem-license.md)
+#### [OEM registration pages](desktop/oem-registration-pages.md)
+##### [Design your registration pages](desktop/design-registration-pages.md)
+##### [Configure OOBE.xml](desktop/registration-pages-oobexml.md)
+##### [Manage user data](desktop/manage-user-data.md)
+##### [Collect and upload data](desktop/collect-and-upload-data.md)
 ### [Set dark mode](desktop/set-dark-mode.md)
 ### [Customize the Country and Operator Settings Asset](desktop/customize-cosa.md)
 
@@ -339,7 +348,7 @@
 ##### [USB settings: Enable the data connection prompt](mobile/mcsf/enable-the-data-connection-prompt.md)
 ##### [USB settings: Hide the weak charger notification option UI](mobile/mcsf/hide-the-weak-charger-notification-option-ui.md)
 ##### [Store settings: CTA app install prompts](mobile/mcsf/cta-app-install-prompts.md)
-##### [Store settings: Windows Store for China](mobile/mcsf/windows-phone-store-for-china.md)
+##### [Store settings: Microsoft Store for China](mobile/mcsf/windows-phone-store-for-china.md)
 ##### [System tray: Display location icon](mobile/mcsf/display-location-icon.md)
 #### [Customizations for SMS and MMS](mobile/mcsf/customizations-for-sms-and-mms.md)
 ##### [Add encoding extension tables for SMS](mobile/mcsf/add-encoding-extension-tables-for-sms.md)

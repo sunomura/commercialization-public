@@ -26,7 +26,7 @@ When you use a folder name other than "Users", like `C:\Documents and Settings`,
 
 -   We don’t recommend using this setting, except perhaps in a test environment.
 
--   When this setting is changed, the Windows Store and Windows Store apps are not supported.
+-   When this setting is changed, Microsoft Store apps are not supported.
 
 -   **Using drives other than the system drive:**
 

@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # TaskbarLinks
 
 
-`TaskbarLinks` specifies shortcuts to display on the taskbar. Up to six shortcuts to programs, Windows Store apps or website links can be specified.
+`TaskbarLinks` specifies shortcuts to display on the taskbar. Up to six shortcuts to programs, Microsoft Store apps or website links can be specified.
 
 **Note**  
 Any item that is pinned to the taskbar will not appear in the **Start** menu list of most frequently used programs.
@@ -47,7 +47,7 @@ Each of the settings under `TaskbarLinks` specifies:
 <td><p>The complete path and website name of the shortcut file with a .website file name extension. The path to the shortcut file must refer to a location on the destination computer. </p></td>
 </tr>
 <tr class="odd">
-<td><p>Shortcut to a Windows Store app</p></td>
+<td><p>Shortcut to a Microsoft Store app</p></td>
 <td><p>Use the Application User Model ID (AUMID).</p></td>
 </tr>
 </tbody>
@@ -123,7 +123,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set a shortcut for Wordpad, a shortcut to Sound Recorder, a shortcut to a Windows Store app with an AUMID of AppID1 and a shortcut to the Bing website.
+The following XML output shows how to set a shortcut for Wordpad, a shortcut to Sound Recorder, a shortcut to a Microsoft Store app with an AUMID of AppID1 and a shortcut to the Bing website.
 
 ```
 <TaskbarLinks>

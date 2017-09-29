@@ -17,7 +17,7 @@ ms.technology: windows-oem
 # AppId
 
 
-`AppId` specifies the `AppID` of the Windows Store apps that appear as wide tiles on the **Start** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store.
+`AppId` specifies the `AppID` of the Microsoft Store apps that appear as wide tiles on the **Start** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Microsoft Store.
 
 ## Values
 

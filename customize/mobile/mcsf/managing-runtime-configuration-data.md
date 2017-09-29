@@ -17,7 +17,7 @@ ms.technology: windows-oem
 
 When the runtime configuration engine applies a variant to a device, a number of assets are used and these can include maps, apps, wallpapers, ringtones, and so on. The data for these features can be significantly large. To enable many variants to ship in a single device image, multiple large sets of this data are included somewhere in storage. Only Retail Mode content, map data, and app installers are stored in the user store. Other smaller variant data is automatically placed in the OS partition.
 
-To allow users to reset their device and not wait for apps to download from the Windows Store if the same variant is used, the OS protects the data by copying it to the OS partition. The following table describes what happens to the device content during initial install, upon resetting the storage limit, and after the device is reset.
+To allow users to reset their device and not wait for apps to download from the Microsoft Store if the same variant is used, the OS protects the data by copying it to the OS partition. The following table describes what happens to the device content during initial install, upon resetting the storage limit, and after the device is reset.
 
 <table style="width:100%;">
 <thead valign="bottom">

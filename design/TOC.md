@@ -112,6 +112,17 @@
 ##### [Output reports](component-guidelines/radial-controller-output-reports.md)
 ##### [Sample report descriptors](component-guidelines/radial-controller-sample-report-descriptors.md)
 
+### [Security considerations for OEMs](device-experiences/OEM-security-considerations.md)
+#### [Secure boot](device-experiences/OEM-secure-boot.md)
+#### [Trusted Platform Module 2.0](device-experiences/OEM-TPM.md)
+#### [UEFI firmware requirements](device-experiences/OEM-UEFI.md)
+#### [Virtualization-based security (VBS)](device-experiences/OEM-VBS.md)
+#### [Application Guard hardware requirements](device-experiences/OEM-app-guard.md)
+#### [Credential Guard hardware requirements](device-experiences/OEM-credential-guard.md)
+#### [Device Guard hardware requirements](device-experiences/OEM-device-guard.md)
+
+
+
 ### [Thermal management in Windows](device-experiences/thermal-management-in-windows.md)
 #### [Design Guide](device-experiences/design-guide.md)
 #### [User Experience](device-experiences/user-experience.md)
@@ -122,8 +133,7 @@
 #### [Thermal Management IOCTLs](device-experiences/thermal-management-ioctls.md)
 ##### [IOCTL_THERMAL_READ_POLICY](device-experiences/ioctl-thermal-read-policy.md)
 ##### [IOCTL_THERMAL_READ_TEMPERATURE](device-experiences/ioctl-thermal-read-temperature.md)
-### [Security and reliability](device-experiences/security-and-reliabilty.md)
-### [Device encryption for OEMs](device-experiences/device-encryption-for-oem.md)
+
 ### [Versatile input platform](device-experiences/versitle-input-platform.md)
 
 ## [Hardware component guidelines](component-guidelines/components.md)

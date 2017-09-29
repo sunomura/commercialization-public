@@ -1,6 +1,6 @@
 ---
 title: WindowsPageDown
-description: Blocks the Windows logo key+Page Down key combination used to move a Windows Store app to the right monitor.
+description: Blocks the Windows logo key+Page Down key combination used to move a Microsoft Store app to the right monitor.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,7 +15,7 @@ ms.technology: windows-oem
 # WindowsPageDown
 
 
-Blocks the Windows logo key+Page Down key combination used to move a Windows Store app to the right monitor.
+Blocks the Windows logo key+Page Down key combination used to move a Microsoft Store app to the right monitor.
 
 ## Type
 

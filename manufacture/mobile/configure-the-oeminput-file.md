@@ -36,9 +36,7 @@ In this walkthrough, we will add the two features we defined in [Adding a packag
 
     **Note**  If you're using a mobile reference device, make sure you update the values in the **SOC**, **SV**, and **Device** sections of the OEMInput.xml. You may also change the **ReleaseType** depending on what you're trying to do. Make sure you follow the guidance in [OEMInput file contents](https://msdn.microsoft.com/library/windows/hardware/dn756778) when specifying values for these elements.
 
-     
-
-    ```XML
+    ``` xml
     <?xml version="1.0" encoding="utf-8"?>
     <OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xmlns:xsd="http://www.w3.org/2001/XMLSchema" 

@@ -25,7 +25,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 ## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
-1.  Create a BSP working folder that you'd like to modify.
+1.  From the IoT Core Shell, create a BSP working folder that you'd like to modify.
 
     ```
     newbsp MyRPi2
@@ -65,19 +65,20 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
     Copy in features you want. Exclude any that don't apply to your project.
 	
 	For example, copy in each of the drivers **except** the existing GPIO driver:
-	```
-     <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="RASPBERRYPI.RPi2.GPIO.cab">
+
+	``` xml
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="RASPBERRYPI.RPi2.GPIO.cab">
         <FeatureIDs>
           <FeatureID>RPI2_DRIVERS</FeatureID>
         </FeatureIDs>
-      </PackageFile>
+    </PackageFile>
 	```
 	
 	Note: To make grouping packages easier, you can combine them into one or more Feature IDs. For example, all of the Raspberry Pi 2 optional drivers use the Feature ID: RPI2_DRIVERS.
 
 6.  Add the HelloBlinky driver:
 	
-    ```
+    ``` xml
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
           <FeatureIDs>
             <FeatureID>RPI2_DRIVERS</FeatureID>
@@ -107,7 +108,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
     -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
 
-       ```
+       ``` xml
        <Microsoft>
           <Feature>IOT_GENERIC_POP</Feature>
 	   ...
@@ -122,7 +123,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
           <Feature>OEM_AppxHelloWorld</Feature> 
           <Feature>OEM_FileAndRegKey</Feature> 
         </OEM>
-    ```
+        ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
@@ -151,7 +152,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 Congratulations, you've completed Lab 2. 
 
-[Lab 3: Update apps](https://msdn.microsoft.com/windows/hardware/commercialize/service/iot/updating-iot-core-apps)
+[Lab 3: Update apps](../../service/iot/updating-iot-core-apps.md)
 
 ##  <span id="Related_topics"></span>Related topics
 [Device layout](device-layout.md)

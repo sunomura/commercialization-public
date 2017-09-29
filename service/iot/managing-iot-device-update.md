@@ -20,7 +20,7 @@ OEM and enterprise customers using Windows 10 IoT Core can take advantage of de
 
  
 
-Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://msdn.microsoft.com/windows/hardware/dn914769.aspx ) for more detail about device management protocols.
+Device Management Policy can be set using either the Windows Imaging and Configuration Designer (ICD) tool or a mobile device management (MDM) service. See [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/index) for more detail about device management protocols.
 
 ## <span id="AllowAutoUpdate_to_turn_updates_on_or_off"></span><span id="allowautoupdate_to_turn_updates_on_or_off"></span><span id="ALLOWAUTOUPDATE_TO_TURN_UPDATES_ON_OR_OFF"></span>AllowAutoUpdate to turn updates on or off
 

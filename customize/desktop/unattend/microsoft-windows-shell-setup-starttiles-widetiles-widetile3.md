@@ -30,7 +30,7 @@ ms.technology: windows-oem
 <tbody>
 <tr class="odd">
 <td><p>[AppId](microsoft-windows-shell-setup-starttiles-widetiles-widetile1-appid.md)</p></td>
-<td><p>Specifies the Windows Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
+<td><p>Specifies the Microsoft Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
 <td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-widetiles-widetile1-firstruntask.md)</p></td>

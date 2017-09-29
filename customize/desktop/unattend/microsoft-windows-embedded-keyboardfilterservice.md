@@ -290,11 +290,11 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 </tr>
 <tr class="odd">
 <td><p>[WindowsPageDown](Microsoft-Windows-Embedded-KeyboardFilterService-windowspagedown.md)</p></td>
-<td><p>Blocks the Windows logo key+Page Down key combination used to move a Windows Store app to the right monitor.</p></td>
+<td><p>Blocks the Windows logo key+Page Down key combination used to move a Microsoft Store app to the right monitor.</p></td>
 </tr>
 <tr class="even">
 <td><p>[WindowsPageUp](Microsoft-Windows-Embedded-KeyboardFilterService-windowspageup.md)</p></td>
-<td><p>Blocks the Windows logo key+Page Up key combination used to move a Windows Store app to the left monitor.</p></td>
+<td><p>Blocks the Windows logo key+Page Up key combination used to move a Microsoft Store app to the left monitor.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[WindowsPeriod](Microsoft-Windows-Embedded-KeyboardFilterService-windowsperiod.md)</p></td>
@@ -346,7 +346,7 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 </tr>
 <tr class="odd">
 <td><p>[WindowsTab](Microsoft-Windows-Embedded-KeyboardFilterService-windowstab.md)</p></td>
-<td><p>Blocks the Windows logo key+Tab key combination used to cycle through Windows Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.</p></td>
+<td><p>Blocks the Windows logo key+Tab key combination used to cycle through Microsoft Store apps. Also blocks the Windows logo key+Ctrl+Tab and Windows logo key+Shift+Tab key combinations.</p></td>
 </tr>
 <tr class="even">
 <td><p>[WindowsU](Microsoft-Windows-Embedded-KeyboardFilterService-windowsu.md)</p></td>

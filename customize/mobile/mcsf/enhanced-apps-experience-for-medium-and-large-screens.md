@@ -202,11 +202,11 @@ OEMs can use the **UserPreferenceWidth** setting to override the default behavio
     </tr>
     <tr class="even">
     <td><p>System font size and list item size</p></td>
-    <td><p>Open the Windows Store app and verify that the apps list contains smaller tiles and font size.</p></td>
+    <td><p>Open the Microsoft Store app and verify that the apps list contains smaller tiles and font size.</p></td>
     </tr>
     <tr class="odd">
     <td><p>Two-column to three-column grid view</p></td>
-    <td><p>From the Windows Store app, navigate to either top music albums or new releases and verify that there are 3 columns and the tile sizes and spacing are smaller.</p></td>
+    <td><p>From the Microsoft Store app, navigate to either top music albums or new releases and verify that there are 3 columns and the tile sizes and spacing are smaller.</p></td>
     </tr>
     </tbody>
     </table>

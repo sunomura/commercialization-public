@@ -19,7 +19,7 @@ Partners are required to set certain device metadata, including hardware, suppor
 
 Partners are required to set the following information:
 
--   OEM and mobile operator information, used for display strings in the UI, device update, and connecting to the Windows Store.
+-   OEM and mobile operator information, used for display strings in the UI, device update, and connecting to the Microsoft Store.
 
 -   Hardware component versions and software versions, used for targeting updates to devices and for user support.
 
@@ -116,7 +116,7 @@ Partners are required to set the following information:
     <tr class="odd">
     <td><p><strong>PhoneManufacturer</strong></p></td>
     <td><p><strong>Required.</strong> This setting must contain a code specified by Microsoft that corresponds to the OEM. This setting must not be changed over time, even if an OEM name changes (such as in a merger); the original OEM name must continue to be specified.</p>
-    <p>This setting is used for targeting device updates, for connecting to the store-within-a-store in the Windows Store, and for Watson reports. It also appears as part of the device friendly name on the Welcome screen, the <strong>About</strong> screen in <strong>Settings</strong>, the Ringtone list, and on the computer.</p>
+    <p>This setting is used for targeting device updates, for connecting to the store-within-a-store in the Microsoft Store, and for Watson reports. It also appears as part of the device friendly name on the Welcome screen, the <strong>About</strong> screen in <strong>Settings</strong>, the Ringtone list, and on the computer.</p>
     <p>The value must be a valid OEM ID. To get the valid OEM ID that applies to you, contact your Microsoft representative.</p>
     <p>The OEM ID value is in all capital letters, for example, FABRIKAM.</p>
     <p>To use an OEM-provided value to display in the <strong>Settings</strong> &gt; <strong>About</strong> screen, OEMs can use the optional <strong>PhoneManufacturerDisplayName</strong> setting. For more information, see the next entry in this table.</p>

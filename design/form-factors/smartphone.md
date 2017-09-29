@@ -16,185 +16,102 @@ ms.technology: windows-oem
 
 
 Smartphones come in a wide range of sizes from low cost phones, small tablets (phablets) and industrial handheld devices. A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. Windows 10 Mobile can support a wide range of small form factors devices. Listed below are a few recommended hardware configurations.
+
 <table>
 <tbody valign="top">
 <tr>
-<td colspan="2"/>
-<td>
-<p>
-![value phone](../images/phone.png)
-</p>
-<p>
-Value Phone
-</p>
-</td>
-<td>
-<p>
-![premium phone](../images/phone.png)
-</p>
-<p>
-Premium Phone
-</p>
-</td>
-<td>
-<p>
-![value phablet](../images/phablet.png)
-</p>
-<p>
-Value Phablet
-</p>
-</td>
-</tr>
-<tr>
+<td>&nbsp;</td>
 <td colspan="2">
-Key Features
+<p style="text-align: center;">![value phone](../images/phone.png)</p>
 </td>
 <td>
-<p>
-Low cost
-</p>
-<p>
-[Cortana](../device-experiences/cortana.md)
-</p>
-</td>
-<td>
-<p>
-[Cortana](../device-experiences/cortana.md)
-</p>
-<p>
-[Windows Hello](../device-experiences/windows-hello.md)
-</p>
-<p>
-[Continuum for Phones](../device-experiences/continuum-phone.md)
-</p>
-</td>
-<td>
-<p>
-[Cortana](../device-experiences/cortana.md)
-</p>
-<p>
-[Windows Hello](../device-experiences/windows-hello.md)
-</p>
+<p>![value phablet](../images/phablet.png)</p>
 </td>
 </tr>
 <tr>
-<td colspan="2">
-Operating System
+<td bgcolor="EEEEEE"><p>Type</p></td>
+<td>
+<p>Value Phone</p>
 </td>
 <td>
-Windows 10 Mobile
+<p>Premium Phone</p>
 </td>
 <td>
-Windows 10 Mobile
-</td>
-<td>
-Windows 10 Mobile
+<p>Value Phablet</p>
 </td>
 </tr>
 <tr>
-<td rowspan="7">
-[Recommended Components](../component-guidelines/components.md)
+<td bgcolor="EEEEEE">Key Features</td>
+<td>
+<p>Low cost</p>
+<p>[Cortana](../device-experiences/cortana.md)</p>
 </td>
 <td>
-CPU
+<p>[Cortana](../device-experiences/cortana.md)</p>
+<p>[Windows Hello](../device-experiences/windows-hello.md)</p>
+<p>[Continuum for Phones](../device-experiences/continuum-phone.md)</p>
 </td>
 <td>
-Supported entry SoC
-</td>
-<td>
-Supported premium SoC
-</td>
-<td>
-Mid tier supported SoC
+<p>[Cortana](../device-experiences/cortana.md)</p>
+<p>[Windows Hello](../device-experiences/windows-hello.md)</p>
 </td>
 </tr>
 <tr>
-<td>
-RAM/Storage
-</td>
-<td>
-1GB / 8GB with SD slot
-</td>
-<td>
-2-4GB / 32-64GB with SD slot
-</td>
-<td>
-2GB / 16GB with SD slot
-</td>
+<td bgcolor="EEEEEE">Operating System</td>
+<td colspan="3">Windows&nbsp;10 Mobile</td>
 </tr>
 <tr>
-<td>
-Display
-</td>
-<td>
-3.5”-5”+ / WVGA -FWVGA-qHD\*
-</td>
-<td>
-4.5-5.5”+ / FHD-WQHD
-</td>
-<td>
-5.5”-7”/720p+
-</td>
+<td colspan="4" bgcolor="EEEEEE"><p style="margin: .75em 0 .75em 0;">Recommended components</p></td>
 </tr>
 <tr>
-<td>
-Dimensions
-</td>
-<td>
-&lt;10.5mm & &lt;135g
-</td>
-<td>
-&lt;7.5mm & &lt;160g
-</td>
-<td>
-&lt;10mm & &lt;175g
-</td>
+<td bgcolor="EEEEEE"><p>CPU</p></td>
+<td><p>Supported entry SoC</p></td>
+<td><p>Supported premium SoC</p></td>
+<td><p>Mid tier supported SoC</p></td>
 </tr>
 <tr>
-<td>
-Battery
-</td>
-<td>
-1400 mAh+ (1 day active use)
-</td>
-<td>
-2500+ mAh ( 1 day active use)
-</td>
-<td>
-3000 mAh+ ( 1 day active use)
-</td>
+<td bgcolor="EEEEEE"><p>RAM/Storage</p></td>
+<td><p>1&nbsp;GB&nbsp;/ 8&nbsp;GB with SD slot</p></td>
+<td><p>2-4&nbsp;GB&nbsp;/ 32-64&nbsp;GB with SD slot</p></td>
+<td><p>2&nbsp;GB&nbsp;/ 16&nbsp;GB with SD slot</p></td>
 </tr>
 <tr>
-<td>
-Connectivity
-</td>
-<td>
-3G (LTE/Cat 3)/802.11b/g/n, microUSB, 3.5mm jack, BT LE
-</td>
-<td>
-LTE/Cat 4+ /802.11b/g/n/ac 2x2, USB, 3.5mm jack, BT LE, NFC
-</td>
-<td>
-LTE/Cat 3 /802.11b/g/n/ac 2x2, USB 3.0 type-c, 3.5mm jack, BT LE, NFC
-</td>
+<td bgcolor="EEEEEE"><p>Display</p></td>
+<td><p>3.5&rdquo;&ndash;5&rdquo;+&nbsp;/ WVGA -FWVGA-qHD\*</p></td>
+<td><p>4.5&ndash;5.5&rdquo;+&nbsp;/ FHD-WQHD</p></td>
+<td><p>5.5&rdquo;&ndash;7&rdquo;&nbsp;/ 720p+</p></td>
 </tr>
 <tr>
-<td>
-Camera+
-</td>
-<td>
-5MP, .3MP FFC
-</td>
-<td>
-20MP with OIS/Flash; 5MP FFC
-</td>
-<td>
-5MP, .3MP FFC
-</td>
+<td bgcolor="EEEEEE"><p>Dimensions</p></td>
+<td><p>&lt;&nbsp;10.05&nbsp;mm &amp; &lt;&nbsp;135g</p></td>
+<td><p>&lt;&nbsp;7.5&nbsp;mm &amp; &lt;&nbsp;160g</p></td>
+<td><p>&lt;&nbsp;10&nbsp;mm &amp; &lt;&nbsp;175g</p></td>
+</tr>
+<tr>
+<td bgcolor="EEEEEE"><p>Battery</p></td>
+<td><p>1400&nbsp;mAh+ (1 day active use)</p></td>
+<td><p>2500+&nbsp;mAh (1 day active use)</p></td>
+<td><p>3000&nbsp;mAh+ (1 day active use)</p></td>
+</tr>
+<tr>
+<td bgcolor="EEEEEE"><p>Connectivity</p></td>
+<td><p>3G&nbsp;(LTE/Cat&nbsp;3)&nbsp;/&nbsp;802.11b/g/n, microUSB, 3.5&nbsp;mm jack, BT LE</p></td>
+<td><p>LTE/Cat&nbsp;4+&nbsp;/ 802.11b/g/n/ac 2x2, USB, 3.5&nbsp;mm jack, BT LE, NFC</p></td>
+<td><p>LTE/Cat&nbsp;3&nbsp;/ 802.11b/g/n/ac 2x2, USB 3.0 type-c, 3.5&nbsp;mm jack, BT LE, NFC</p></td>
+</tr>
+<tr>
+<td bgcolor="EEEEEE"><p>Camera+</p></td>
+<td><p>5&nbsp;MP, .3&nbsp;MP FFC</p></td>
+<td><p>20&nbsp;MP with OIS/Flash; 5&nbsp;MP FFC</p></td>
+<td><p>5&nbsp;MP, .3&nbsp;MP FFC</p></td>
 </tr>
 </tbody>
 </table>
 
-\* qHD requires &gt;512MB memory
+\* qHD requires &gt;&nbsp;512&nbsp;MB memory.
 
-Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs (http://go.microsoft.com/fwlink/?LinkId=618212)](http://go.microsoft.com/fwlink/?LinkId=618212).
+
+For more guidance in selecting hardware components, see [Hardware component guidelines](../component-guidelines/components.md).
+
+
+Research the Windows Mobile options and partner with a registered Windows phone manufacturer to build a device utilizing your brand. For more information, see [Windows 10 Hardware Developer Programs](http://go.microsoft.com/fwlink/?LinkId=618212).
